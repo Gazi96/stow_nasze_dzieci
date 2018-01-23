@@ -70,6 +70,7 @@ function showSlides()
         parent.insertBefore(content, parent.lastChild);*/
                 
         current = sliderList.length-1;
+        slider.style.left = 0 + "vw";
     }
     
     myTimer = setTimeout(showSlides, 3000);
