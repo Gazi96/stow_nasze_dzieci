@@ -93,21 +93,21 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    border-bottom: 22px solid white;
+    border-bottom: 24px solid white;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     height: 10px;
-    width: 160px;
+    width: 180px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 50px; }
+    padding-top: 52px; }
     .slider .trapezoid__circle {
       width: 12px;
       height: 12px;
       border-radius: 50%;
       border: 2px solid;
-      margin-top: 30px; }
+      margin-top: 34px; }
     .slider .trapezoid__circle--yellow {
       border-color: #ffb400; }
     .slider .trapezoid__circle--blue {
@@ -120,22 +120,27 @@
     .slider .trapezoid__circle--orange {
       border-color: #f6511d; }
 
+.section--dashed {
+  border-bottom: 1px dashed #00a6ed;
+  border-width: 9px; }
+
 .section {
-  padding: 20px 20px;
+  padding: 25px 20px;
   text-align: right; }
   .section__headline {
-    text-align: left;
     margin: 0;
     font-family: "merydale";
     font-weight: bold;
-    font-size: 35px;
+    font-size: 36px;
     text-transform: uppercase; }
+  .section__headline--left {
+    text-align: left; }
   .section__paragraph {
     text-align: left;
     font-family: "Raleway", sans-serif;
     font-weight: 600;
-    line-height: 34px;
-    font-size: 30px;
+    line-height: 36px;
+    font-size: 32px;
     padding-right: 90px; }
   .section__button {
     text-align: right;
@@ -154,3 +159,23 @@
   .section .button__item {
     font-weight: lighter;
     font-size: 20px; }
+
+.section__headline--center {
+  text-align: center; }
+
+.section .content {
+  display: flex;
+  padding: 10px 30px; }
+  .section .content__img {
+    flex: 2; }
+  .section .content__paragraph {
+    flex: 5;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    line-height: 34px;
+    font-size: 30px; }
+    .section .content__paragraph--bold {
+      font-weight: 900; }

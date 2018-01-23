@@ -125,22 +125,22 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        border-bottom: 22px solid white;
+        border-bottom: 24px solid white;
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
         height: 10px;
-        width: 160px;
+        width: 180px;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-top: 50px;
+        padding-top: 52px;
         
         &__circle{
             width: 12px;
             height: 12px;
             border-radius: 50%;
             border: 2px solid;
-            margin-top: 30px;
+            margin-top: 34px;
         }
         &__circle--yellow{
             border-color: $yellow;
@@ -163,24 +163,30 @@
     
 }
 
+.section--dashed{
+    border-bottom: 1px dashed $blue;
+    border-width: 9px; 
+}
 .section
 {
-    padding: 20px 20px;
-    text-align: right;
+    padding: 25px 20px;
+    text-align: right; 
     &__headline{
-        text-align: left;
-        margin: 0;
+         margin: 0;
         font-family: $font1;
         font-weight: bold;
-        font-size: 35px;
+        font-size: 36px;
         text-transform: uppercase;
+    }
+    &__headline--left{
+        text-align: left;
     }
     &__paragraph{
         text-align: left;
         font-family: $font2;
         font-weight: 600;
-        line-height: 34px;
-        font-size: 30px;
+        line-height: 36px;
+        font-size: 32px;
         padding-right: 90px;
     }
     &__button{
@@ -204,6 +210,34 @@
         font-size: 20px;
     }
     
+}
+.section{
+    &__headline--center
+    {
+        text-align: center;
+    }
+    .content{
+        display: flex;
+        padding: 10px 30px;
+        &__img{
+            flex: 2;
+        }
+        &__paragraph{
+            flex: 5;
+            padding-left: 40px;
+            padding-right: 40px;
+            text-align: left;
+            font-family: $font2;
+            font-weight: 600;
+            line-height: 34px;
+            font-size: 30px;
+            &--bold {
+            font-weight: 900;
+        }
+        
+        }
+        
+    }
 }
 
 
