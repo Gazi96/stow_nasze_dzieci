@@ -15,9 +15,9 @@
     justify-content: flex-end;
     align-items: center; }
     .header .nav .hamburger {
-      width: 70px;
-      height: 70px;
-      border: 3px solid #ffb400;
+      width: 100px;
+      height: 100px;
+      border: 5px solid #ffb400;
       border-radius: 50%;
       padding: 18px 20px;
       box-sizing: border-box;
@@ -26,15 +26,15 @@
       align-items: center;
       flex-direction: column; }
       .header .nav .hamburger__item--navy {
-        height: 4px;
+        height: 5px;
         width: 100%;
         background-color: #0d2c54; }
       .header .nav .hamburger__item--orange {
-        height: 4px;
+        height: 5px;
         width: 100%;
         background-color: #f6511d; }
       .header .nav .hamburger__item--green {
-        height: 4px;
+        height: 5px;
         width: 100%;
         background-color: #7fb800; }
     .header .nav .menu {
@@ -126,7 +126,7 @@
   .section__headline {
     text-align: left;
     margin: 0;
-    font-family: "merydale", sans-serif;
+    font-family: "merydale";
     font-weight: bold;
     font-size: 35px;
     text-transform: uppercase; }
