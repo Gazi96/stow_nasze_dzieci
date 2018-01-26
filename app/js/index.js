@@ -1,3 +1,16 @@
+//menu
+var hamburger = document.getElementsByClassName("hamburger")[0];
+var nav = document.getElementsByClassName("nav")[0];
+hamburger.addEventListener("click", drop);
+
+function drop()
+{
+    nav.classList.toggle('nav--drop');
+}
+
+
+
+//slider
 var slider = document.getElementsByClassName("slider__box")[0];
 var sliderList = document.getElementsByClassName("slider__container");
 

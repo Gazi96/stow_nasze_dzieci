@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app/css/animation.css">
     <link rel="stylesheet" href="app/css/font-awesome/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400,700,900" rel="stylesheet">
@@ -14,18 +15,20 @@
         <div class="header__logo">
             <img src="app/img/logo.jpg" alt="" class="header__img">
         </div>
-        <nav class="nav">
+        <div class="mobile">
             <div class="hamburger">
                 <span class="hamburger__item--navy"></span>
                 <span class="hamburger__item--orange"></span>
                 <span class="hamburger__item--green"></span>
             </div>
+        </div>
+        <nav class="nav">
             <ul class="menu">
-                <li class="menu__item"><a href="" class="menu__link"></a></li>
-                <li class="menu__item"><a href="" class="menu__link"></a></li>
-                <li class="menu__item"><a href="" class="menu__link"></a></li>
-                <li class="menu__item"><a href="" class="menu__link"></a></li>
-                <li class="menu__item"><a href="" class="menu__link"></a></li>
+                <li class="menu__item menu__item menu__item--navy"><a href="" class="menu__link">strona główna</a></li>
+                <li class="menu__item menu__item--green"><a href="" class="menu__link">aktualności</a></li>
+                <li class="menu__item menu__item--blue"><a href="" class="menu__link">nasze działania</a></li>
+                <li class="menu__item menu__item--orange"><a href="" class="menu__link">wsparcie</a></li>
+                <li class="menu__item menu__item--yellow"><a href="" class="menu__link">kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -77,11 +80,11 @@
             <div class="box">
                 <div class="box__button">
                     <img class="box__img" src="app/img/Inteligentny%20obiekt%20wektorowy%20(1).png" alt="">
-                    <span class="box__text--end">przekaż 1% podatku</span>
+                    <div class="box__text--end">przekaż 1% podatku</div>
                 </div>
                 <div class="box__button box__button--padding">
-                    <span class="box__text--start">prześlij dotacje</span>
-                    <img class="box__img" src="app/img/Inteligentny%20obiekt%20wektorowy.png" alt="">
+                    <div class="box__text--start">prześlij dotacje</div>
+                    <img class="box__img box__img--right" src="app/img/Inteligentny%20obiekt%20wektorowy.png" alt="">
                 </div>
             </div>
         </section>
@@ -143,9 +146,56 @@
             </a>
         </section>
     </main>
-    
-    
+    <footer class="footer">
+        <ul class="footer__menu">
+            <li class="footer__item">strona główna</li>
+            <li class="footer__item">aktualności
+                <ul>
+                    <li class="item__li">archiwum</li>
+                </ul>
+            </li>
+            <li class="footer__item">nasze działania
+                <ul>
+                    <li class="item__li">kolonie</li>
+                    <li class="item__li">zimowiska</li>
+                    <li class="item__li">imprezy szkolne</li>
+                    <li class="item__li">akcje charytatywne</li>
+                </ul>
+            </li>
+            <li class="footer__item">wsparcie
+                <ul>
+                    <li class="item__li">przekaż 1% podatku</li>
+                    <li class="item__li">prześlij dotacje</li>
+                    <li class="item__li">zostań partnerem</li>
+                </ul>
+            </li>
+            <li class="footer__item">kontakt</li>
+        </ul>
+        <ul class="footer__contact">
+            <li class="contact__info"><i class="fa fa-facebook footer__icon" aria-hidden="true"></i>
+            <span class="footer__info">stowarzyszenie nasze dzieci</span>
+            </li>
+            <li class="contact__info">
+                <i class="fa fa-map-marker footer__icon" aria-hidden="true"></i>
+                <span class="footer__info">adres: ul. majora 12a kraków</span>
+            </li>
+            <li class="contact__info"><i class="fa fa-phone footer__icon" aria-hidden="true"></i><span class="footer__info">Telefon: <a href="">12 656 47 48</a></span></li>
+            <li class="contact__info">
+                <i class="fa fa-envelope footer__icon" aria-hidden="true"></i>
+                <span class="footer__info">Email: <a href="">stownaszedziec@go2.pl</a></span></li>
+            <li class="contact__info">
+                <i class="fa fa-usd footer__icon" aria-hidden="true"></i>
+                <span class="footer__info">Konto bankowe:
+                <p>DEUTSCHE BANK 24 S.A
+                Oddział Kraków ul.Starowiślna <strong><p>88
+                    52 1910 1048 3607 1270 1121 0001</p></strong></p></span>
+            </li> 
+        </ul>
+        <div class="footer__create">
+            <p>&copy; 2018 stowarzyszenie nasze dzieci. all right reserved</p>
+            <p>Created by: Marek Kania, Rafał Gazda, Sebastian Dziula</p>
+        </div>
+    </footer>
     <script src="app/js/index.js"></script>
-    
 </body>
 </html>
