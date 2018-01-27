@@ -7,7 +7,6 @@ a {
   color: inherit; }
 
 body {
-  line-height: 110%;
   font-size: 90%; }
 
 .header {
@@ -31,7 +30,7 @@ body {
     .header .mobile .hamburger {
       width: 65px;
       height: 65px;
-      border: 5px solid #ffb400;
+      border: 4px solid #ffb400;
       border-radius: 50%;
       cursor: pointer;
       padding: 15px 15px;
@@ -41,16 +40,16 @@ body {
       align-items: center;
       flex-direction: column; }
       .header .mobile .hamburger__item--navy {
-        height: 5px;
-        width: 100%;
+        height: 3px;
+        width: 90%;
         background-color: #0d2c54; }
       .header .mobile .hamburger__item--orange {
-        height: 5px;
-        width: 100%;
+        height: 3px;
+        width: 90%;
         background-color: #f6511d; }
       .header .mobile .hamburger__item--green {
-        height: 5px;
-        width: 100%;
+        height: 3px;
+        width: 90%;
         background-color: #7fb800; }
   .header .nav {
     flex-basis: 100%;
@@ -65,7 +64,7 @@ body {
       padding: 0px; }
       .header .nav .menu .menu__item {
         margin: 0.2em 0em;
-        padding: 0.1em 0;
+        padding: 8px 0;
         text-align: center;
         font-size: 1.5em;
         border: 2px solid black;
@@ -171,15 +170,15 @@ body {
       border-color: #f6511d; }
 
 .section {
-  padding: 25px 10px;
+  padding: 30px 10px;
   text-align: right;
   border-bottom: 1px dashed #00a6ed;
-  border-width: 9px; }
+  border-width: 6px; }
   .section__headline {
     margin: 0;
     font-family: "merydale";
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.6em;
     line-height: 1.2em;
     text-transform: uppercase; }
   .section__headline--left {
@@ -330,8 +329,8 @@ body {
     width: 300px;
     margin: auto; }
 
-.section--top {
-  margin-top: 20px; }
+.flex {
+  margin-top: 30px; }
 
 .section--photo {
   display: flex;
@@ -343,19 +342,22 @@ body {
     color: white;
     text-transform: uppercase;
     margin: 0;
-    flex-basis: 100%; }
+    flex-basis: 100%;
+    font-size: 23px; }
   .section--photo .section__headline--navy {
     background-color: #0d2c54; }
-  .section--photo .content .section__paragraph {
-    text-align: left;
-    padding-left: 5px;
-    line-height: 1.3em;
-    font-size: 1.1em; }
-  .section--photo .content .img--small {
-    flex: 1;
-    float: right;
-    width: 50%;
-    height: auto; }
+  .section--photo .content {
+    min-height: 180px; }
+    .section--photo .content .section__paragraph {
+      text-align: left;
+      padding-left: 5px;
+      line-height: 1.3em;
+      font-size: 1.1em; }
+    .section--photo .content .img--small {
+      flex: 1;
+      float: right;
+      width: 50%;
+      height: auto; }
   .section--photo .section__button {
     align-self: flex-end;
     margin-right: 10px; }
@@ -411,26 +413,31 @@ body {
     font-size: 0.9em; }
     .footer .footer__menu .footer__item .item__li {
       text-transform: capitalize;
-      padding: 0.15em 0px;
+      padding: 0.17em 0px;
       font-size: 0.9em;
       list-style-type: none; }
   .footer .footer__contact {
     flex: 3;
     list-style-type: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin: 0px;
     padding-left: 5px;
     font-size: 0.8em;
     line-height: 2em; }
     .footer .footer__contact .contact__info {
-      padding: 0.15em 0;
+      padding: 0.4em 0;
       display: flex; }
       .footer .footer__contact .contact__info .footer__icon {
+        text-align: center;
+        flex: 2;
         font-size: 1.5em;
         font-weight: 900;
         padding-right: 0.2em; }
       .footer .footer__contact .contact__info .footer__info {
+        flex: 12;
         font-size: 0.85em; }
+        .footer .footer__contact .contact__info .footer__info .footer__info--lowecase {
+          text-transform: lowercase; }
   .footer .footer__create {
     margin-top: 10px;
     padding-top: 10px;
@@ -454,6 +461,8 @@ body {
   .footer {
     padding-top: 15px;
     justify-content: space-around; }
+  .footer__contact {
+    width: 220px; }
   .footer .footer__menu {
     flex: none; }
   .footer .footer__contact {
@@ -476,6 +485,19 @@ body {
     height: 114.25px; }
   .content__photo {
     text-align: center; } }
+
+@media screen and (min-width: 610px) {
+  .flex {
+    display: flex;
+    flex-wrap: wrap; }
+    .flex .section--photo {
+      flex-basis: 50%; }
+  .footer__contact {
+    width: 300px; }
+  body {
+    font-size: 120%; }
+  .section {
+    padding: 40px 60px; } }
 
 @media screen and (min-width: 640px) {
   .section__img {
