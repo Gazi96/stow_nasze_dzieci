@@ -150,6 +150,10 @@ var myFunction = function() {
                 clearTimeout(myTimer);
                 myTimer = setTimeout(showSlides, 3000);
             }
+            
+            backgroundColor();
+            content();
+            
         }
     }
 };
