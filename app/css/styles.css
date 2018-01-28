@@ -256,7 +256,6 @@ body {
     box-sizing: border-box;
     border-radius: 25px;
     overflow: hidden;
-    transition: all 0.3s;
     cursor: pointer;
     /*span{
                 justify-self: center;
@@ -291,7 +290,7 @@ body {
     content: "";
     height: 100%;
     width: 50px;
-    transition: all 0.3s;
+    transition: all 0.2s;
     background-color: white; }
   .section .box__button::after {
     position: absolute;
@@ -363,7 +362,7 @@ body {
     text-align: center; }
   .section--last .box__button--big {
     display: flex;
-    width: 100%;
+    width: 75%;
     align-items: center;
     padding-right: 7px;
     margin: auto; }
