@@ -367,6 +367,7 @@ body{
         }
         
          &__button::before{
+                top: 0;
                 display: block;
                 position: absolute;
                 border-radius: 25px;
@@ -636,7 +637,7 @@ body{
                     text-transform: lowercase;
                 }
             } 
-            }
+        }
         }
         
         .contact__info:hover .footer__icon{
