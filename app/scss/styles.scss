@@ -329,7 +329,7 @@ body{
             box-sizing: border-box;
             border-radius: 25px;
             overflow: hidden;
-            transition: all 0.5s;
+            transition: all 0.3s;
             cursor: pointer;
             .box__photo{
                 display: flex;
@@ -374,7 +374,7 @@ body{
                 content: "";
                 height: 100%;
                 width: 50px;
-                transition: all 0.5s;
+                transition: all 0.3s;
                 background-color: white;
             }
         &__button:hover{

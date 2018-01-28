@@ -255,7 +255,7 @@ body {
     box-sizing: border-box;
     border-radius: 25px;
     overflow: hidden;
-    transition: all 0.5s;
+    transition: all 0.3s;
     cursor: pointer;
     /*span{
                 justify-self: center;
@@ -290,7 +290,7 @@ body {
     content: "";
     height: 100%;
     width: 50px;
-    transition: all 0.5s;
+    transition: all 0.3s;
     background-color: white; }
   .section .box__button:hover {
     color: #f6511d; }
