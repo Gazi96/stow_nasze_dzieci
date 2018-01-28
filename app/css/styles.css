@@ -283,6 +283,7 @@ body {
   .section .box .box__button--padding {
     margin-left: 10px; }
   .section .box__button::before {
+    top: 0;
     display: block;
     position: absolute;
     border-radius: 25px;
