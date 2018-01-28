@@ -463,13 +463,14 @@ body {
     padding-left: 5px;
     font-size: 1.1em;
     line-height: 2em; }
-    .footer .footer__contact .contact__info {
+    .footer .footer__contact a .contact__info {
       padding: 5px 0;
       display: flex;
       align-items: baseline; }
-      .footer .footer__contact .contact__info .footer__icon {
+      .footer .footer__contact a .contact__info .footer__icon {
         display: flex;
         align-items: center;
+        opacity: 0.6;
         justify-content: center;
         text-align: center;
         font-size: 16px;
@@ -478,13 +479,16 @@ body {
         width: 25px;
         color: #0d2c54;
         background-color: white;
-        border-radius: 100%; }
-      .footer .footer__contact .contact__info .footer__info {
+        border-radius: 100%;
+        transition: all 0.5s; }
+      .footer .footer__contact a .contact__info .footer__info {
         flex: 12;
         font-size: 14px;
         margin-left: 8px; }
-        .footer .footer__contact .contact__info .footer__info .footer__info--lowecase {
+        .footer .footer__contact a .contact__info .footer__info .footer__info--lowecase {
           text-transform: lowercase; }
+    .footer .footer__contact .contact__info:hover .footer__icon {
+      opacity: 1; }
   .footer .footer__menu {
     display: flex;
     width: 100%;
