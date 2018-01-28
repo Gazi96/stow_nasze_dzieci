@@ -314,6 +314,7 @@ body{
         justify-content: space-around;
         align-items: center;
         &__button{
+            z-index: 10;
             width: 255px;
             display: flex;
             align-items: center;
