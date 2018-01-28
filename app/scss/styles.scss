@@ -378,6 +378,16 @@ body{
                 transition: all 0.3s;
                 background-color: white;
             }
+        &__button::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            z-index: 10;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
         &__button:hover{
             color: $orange;
         }
