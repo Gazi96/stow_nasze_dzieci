@@ -16,7 +16,7 @@ var prev = document.getElementsByClassName("prev")[0];
 var next = document.getElementsByClassName("next")[0];
 
 var sliderContent = document.getElementsByClassName("slidercontent");
-var buttonSlider = document.getElementsByClassName("section__button--slider")[0];
+var buttonSlider = document.getElementsByClassName("section__link")[0];
 var trapezoid = document.getElementsByClassName("trapezoid__circle");
 
 prev.addEventListener("click", myPrev);
