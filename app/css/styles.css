@@ -9,6 +9,23 @@ a {
 body {
   font-size: 90%; }
 
+.section {
+  width: 90%;
+  margin: auto; }
+
+.section--photo {
+  width: 90%;
+  margin: auto; }
+
+.heading {
+  margin: 30px auto;
+  border-bottom: 4px solid #0d2c54;
+  color: #0d2c54;
+  font-size: 1.6em;
+  padding-bottom: 10px;
+  width: 90%;
+  text-transform: uppercase; }
+
 .header {
   width: 100%;
   height: 100%;
@@ -172,13 +189,12 @@ body {
 .section {
   padding: 30px 10px;
   text-align: right;
-  border-bottom: 1px dashed #00a6ed;
   border-width: 6px; }
   .section__headline {
     margin: 0;
     font-family: "merydale";
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 1.4em;
     line-height: 1.2em;
     margin-bottom: 15px;
     text-transform: uppercase; }
@@ -190,7 +206,6 @@ body {
     font-weight: 600;
     line-height: 1.3em;
     font-size: 1.1em;
-    padding: 12px 0px;
     padding-right: 20px; }
   .section__button {
     text-align: right;
@@ -555,10 +570,7 @@ body {
     width: 300px; } }
 
 @media screen and (min-width: 460px) {
-  .section .content {
-    padding: 20px 0px; }
   .section--photo .content {
-    padding-left: 30px;
     min-height: 180px; }
   .section {
     padding-top: 40px;
@@ -605,7 +617,7 @@ body {
   .footer__contact {
     width: 300px; }
   body {
-    font-size: 120%; }
+    font-size: 110%; }
   .section {
     padding: 40px 60px; } }
 

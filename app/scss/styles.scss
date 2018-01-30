@@ -14,6 +14,25 @@ body{
     font-size: 90%;
 }
 
+.section{
+    width: 90%;
+    margin: auto;
+}
+
+.section--photo{
+    width: 90%;
+    margin: auto;    
+}
+
+.heading{
+    margin: 30px auto;
+    border-bottom: 4px solid $navy;
+    color: $navy;
+    font-size: 1.6em;
+    padding-bottom: 10px;
+    width: 90%;
+    text-transform: uppercase;
+}    
 .header{
     width: 100%;
     height: 100%;
@@ -232,13 +251,12 @@ body{
 {
     padding: 30px 10px;
     text-align: right; 
-    border-bottom: 1px dashed $blue;
     border-width: 6px;
     &__headline{
          margin: 0;
         font-family: $font1;
         font-weight: bold;
-        font-size: 1.6em;
+        font-size: 1.4em;
         line-height: 1.2em;
         margin-bottom: 15px;
         text-transform: uppercase;
@@ -252,7 +270,6 @@ body{
         font-weight: 600;
         line-height: 1.3em;
         font-size: 1.1em;
-        padding: 12px 0px;
         padding-right: 20px;
     }
     &__button{
@@ -731,13 +748,8 @@ body{
         width: 300px;
     }
 }
-@media screen and (min-width: 460px) {
-       .section .content{
-        padding: 20px 0px;
-    }
-    
+@media screen and (min-width: 460px) {    
     .section--photo .content {
-    padding-left: 30px;
     min-height: 180px;
 }
     
@@ -821,7 +833,7 @@ body{
     }
     
     body{
-        font-size: 120%;
+        font-size: 110%;
     }
     
     .section{

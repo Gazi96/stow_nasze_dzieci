@@ -8,3 +8,13 @@ gulp.task('sass', function(){
 gulp.task('watch', function(){
  gulp.watch('app/scss/**/*.scss', ['sass']);
 }); 
+
+
+gulp.task('svgstore', function(){
+   return gulp
+    .src('app/img/svg/*.svg')
+    .pipe(svgmin())
+    .pipe(svgstore())
+    .pipe(rename({basename: 'sprite'}))
+    .pipe(gulp.dest('./img'));
+});
