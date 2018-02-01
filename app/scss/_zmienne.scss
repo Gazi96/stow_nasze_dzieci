@@ -5,5 +5,17 @@ $black: rgb(0, 0, 0);
 $blue: rgb(0, 166, 237);
 $green: rgb(127, 184, 0);
 
-$font1: 'merydale';
-$font2: 'Raleway', sans-serif;
+@font-face
+{
+    font-family: Calibri;
+    src:url(../fonts/Calibri.ttf);
+}
+
+@font-face
+{
+    font-family: Merydale;
+    src:url(../fonts/MerydaleRegular.ttf);
+}
+
+$font1: 'Merydale';
+$font2: 'Calibri', sans-serif;

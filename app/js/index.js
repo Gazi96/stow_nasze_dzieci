@@ -5,6 +5,7 @@ hamburger.addEventListener("click", drop);
 
 function drop()
 {
+    hamburger.classList.toggle('hamburger--pushed')
     nav.classList.toggle('nav--drop');
 }
 
@@ -18,6 +19,8 @@ var next = document.getElementsByClassName("next")[0];
 var sliderContent = document.getElementsByClassName("slidercontent");
 var buttonSlider = document.getElementsByClassName("section__link")[0];
 var trapezoid = document.getElementsByClassName("trapezoid__circle");
+
+console.log(buttonSlider);
 
 prev.addEventListener("click", myPrev);
 next.addEventListener("click", myNext);
@@ -170,30 +173,50 @@ function backgroundColor()
             trapezoid[i].style.backgroundColor = "white";
     }
     
+        buttonSlider.classList = "section__link";
+        buttonSlider.children[0].classList = "section__svg";
+        buttonSlider.children[1].classList = "section__content";
+    
     if(current==0)
     {
         trapezoid[current].style.backgroundColor = "rgb(255, 180, 0)";
-        buttonSlider.style.backgroundColor =  "rgb(255, 180, 0)";
+                
+        buttonSlider.classList += " button--yellow";
+        buttonSlider.children[0].classList += " svg--yellow";
+        buttonSlider.children[1].classList += " content--yellow";
+        
     }
     if(current==1)
     {
         trapezoid[current].style.backgroundColor = "rgb(0, 166, 237)";
-        buttonSlider.style.backgroundColor = "rgb(0, 166, 237)";
+                
+        buttonSlider.classList += " button--blue";
+        buttonSlider.children[0].classList += " svg--blue";
+        buttonSlider.children[1].classList += " content--blue";
     }
     if(current==2)
     {
         trapezoid[current].style.backgroundColor = "rgb(127, 184, 0)";
-        buttonSlider.style.backgroundColor = "rgb(127, 184, 0)";
+        
+        buttonSlider.classList += " button--green";
+        buttonSlider.children[0].classList += " svg--green";
+        buttonSlider.children[1].classList += " content--green";
     }
     if(current==3)
     {
         trapezoid[current].style.backgroundColor = "rgb(13, 44, 84)";
-        buttonSlider.style.backgroundColor = "rgb(13, 44, 84)";
+        
+        buttonSlider.classList += " button--navy";
+        buttonSlider.children[0].classList += " svg--navy";
+        buttonSlider.children[1].classList += " content--navy";
     }
     if(current==4)
     {
         trapezoid[current].style.backgroundColor = "rgb(246, 81, 29)";
-        buttonSlider.style.backgroundColor = "rgb(246, 81, 29)";
+        
+        buttonSlider.classList += " button--orange";
+        buttonSlider.children[0].classList += " svg--orange";
+        buttonSlider.children[1].classList += " content--orange";
     }
 }
 

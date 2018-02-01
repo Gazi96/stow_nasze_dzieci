@@ -1,5 +1,7 @@
 @import "zmienne"; 
 
+
+
 p{
     margin: 0px;
 }
@@ -27,20 +29,25 @@ body{
 }
 
 .heading{
-    margin: 30px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 0px;
     border-bottom: 4px solid $navy;
     color: $navy;
-    font-size: 1.6em;
+    font-size: 1.1em;
     padding-bottom: 10px;
     width: 90%;
     text-transform: uppercase;
+    font-family: $font2;
+    font-weight: 700;
 }    
 .header{
     width: 100%;
     height: 100%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 5px 5px;
     box-sizing: border-box;
     &__logo{
         flex: 2;
@@ -84,6 +91,26 @@ body{
                 background-color:  $green;
             }
         }
+        
+        .hamburger--pushed{
+            border: 4px solid $navy;
+            background-color: $navy;
+            .hamburger__item--navy{
+                height: 3px;
+                width: 90%;
+                background-color: white;
+            }
+            .hamburger__item--orange{
+                height: 3px;
+                width: 90%;
+                background-color:  white;
+            }
+            .hamburger__item--green{
+                height: 3px;
+                width: 90%;
+                background-color:  white;
+            }
+        }
     }
     
     .nav{
@@ -100,7 +127,8 @@ body{
                 text-transform: uppercase;
                 margin: auto;
                 height: 36px;
-                margin: 30px auto;
+                margin-bottom: 30px;
+                margin-top: 20px;
                 border: none;
                 .menu__link{
                     display: flex;
@@ -167,7 +195,7 @@ body{
 
 .slider {
     width: 100%;
-    height: auto;
+    height: 190px;
     position: relative;
     background-color: black;
     overflow: hidden;
@@ -281,28 +309,29 @@ body{
 }
 .section
 {
-    padding: 30px 10px;
+    padding: 0px 10px;
+    padding-top: 0px;
+    padding-bottom: 30px;
     text-align: right; 
     border-width: 6px;
     &__headline{
-         margin: 0;
         font-family: $font1;
         font-weight: bold;
-        font-size: 1.4em;
+        font-size: 1.3em;
         line-height: 1.2em;
-        margin-bottom: 15px;
         text-transform: uppercase;
+        margin-bottom: 0px;
     }
     &__headline--left{
         text-align: left;
-        height: 40px;
+        height: 45px;
     }
     &__paragraph{
         text-align: left;
         font-family: $font2;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 1.3em;
-        font-size: 1.1em;
+        font-size: 1em;
         padding-right: 20px;
     }
     .button{
@@ -314,7 +343,7 @@ body{
                         width: 190px;
                         position: relative;
                         transition: all 0.3s;
-                        margin-top: 30px;
+                        margin-top: 20px;
                         .section__svg{
                             position: absolute;
                             top: 50%;
@@ -342,13 +371,15 @@ body{
 
         }
         .section__link--big{
-            justify-content: space-around;
-            width: 260px;
+            justify-content: center;
+            width: 220px;
         }
     }
     .button--two{
-        flex-wrap: wrap;
         justify-content: space-around;
+        .button--padding{
+                margin-left: 10px;
+            }
     }
 }
 .section{
@@ -373,9 +404,9 @@ body{
             padding-right: 5px;
             text-align: left;
             font-family: $font2;
-            font-weight: 600;
+            font-weight: 500;
             line-height: 1.3em;
-            font-size: 1.1em;
+            font-size: 1em;
             &--bold {
                 font-weight: 900;
             }
@@ -585,16 +616,19 @@ body{
         background-color: $navy;
     }
     .content{
-        min-height: 180px;
+        min-height: 160px;
         .section__paragraph {
             text-align: left;
+            font-family: $font2;
+            font-weight: 500;
             padding-left: 5px;
             line-height: 1.3em;
-            font-size: 1.1em;
+            font-size: 1em;
             }
 
             .img--small {
                 flex: 1;
+                padding-left: 15px;
                 float: right;
                 width: 50%;
                 height: auto;
@@ -610,7 +644,7 @@ body{
                         width: 190px;
                         position: relative;
                         transition: all 0.3s;
-                        margin-top: 30px;
+                        margin-top: 20px;
                         .section__svg{
                             position: absolute;
                             top: 50%;
@@ -637,14 +671,16 @@ body{
                         }
 
         }
+            
 }
 }
 
 .flex{
-    
+    margin-top: 40px;
     
 .section--photo {
-    margin: 60px auto;
+    margin: auto;
+    margin-bottom: 45px;
     position: relative;
     .section__link{
     width: 100%;
@@ -992,7 +1028,7 @@ body{
 @media screen and (min-width: 400px){
     .slider {
         width: 100%;
-        height: 200px;
+        height: 220px;
     }
 }
 
@@ -1013,6 +1049,15 @@ body{
 }
 
 @media screen and (min-width: 420px) {
+    .header{
+        width: 90%;
+        margin: auto;
+        .header__img{
+            margin-left: -20px;
+        }
+    }
+    
+    
     .footer{
         padding-top: 15px;
         justify-content: space-around;
@@ -1024,25 +1069,27 @@ body{
         flex: none;
     }
     
-    .header__logo{
-        .header__img{
-            width: 262px;
-            height: 107px;
-        }
-    }
+    
     .box__button--big{
         width: 300px;
     }
 }
+
+@media screen and (min-width: 470px)
+{
+    .header__logo{
+            .header__img{
+                width: 295.33px;
+                height: 120.83px;
+            }
+    }
+}
+
 @media screen and (min-width: 460px) {    
     .section--photo .content {
-    min-height: 180px;
-}
-    
-    .section{
-        padding-top: 40px;
-        padding-bottom: 50px;
+        min-height: 160px;
     }
+    
     .flex{
         margin-top: 40px;
     }
@@ -1077,23 +1124,25 @@ body{
     
     .section .content__photo .content__img {
         width: 114.25px;
+        width: 114.25px;
         height: 114.25px;
     }
     
     .content__photo{
         text-align: center;    
     }
-    .header{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
           
 }
 
 @media screen and (min-width: 600px){
     .slider{
-        height: 450px;
+        height: 310px;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .slider{
+        height: 400px;
     }
 }
 
@@ -1127,6 +1176,13 @@ body{
         height: 193px;
         width: 281px;
     } 
+}
+
+@media screen and (min-width: 700px){
+    .header__logo .header__img{
+        width: 336px;
+        height: 137.417px;
+    }
 }
 
 
