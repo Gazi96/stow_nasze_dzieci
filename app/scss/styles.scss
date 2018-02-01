@@ -703,6 +703,7 @@ body{
         
     }
     .section__container {
+        display: flex;
         overflow: hidden;
             .section__img {
                 width: 100%;
