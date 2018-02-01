@@ -141,7 +141,7 @@ body {
             border-radius: 15px;
             padding-left: 59px;
             align-items: center;
-            font-size: 19px; }
+            font-size: 20px; }
       .header .nav .menu .menu__item--navy {
         border-color: #0d2c54;
         color: #0d2c54; }
@@ -163,7 +163,6 @@ body {
 
 .slider {
   width: 100%;
-  height: 190px;
   position: relative;
   background-color: black;
   overflow: hidden; }
@@ -182,7 +181,7 @@ body {
       background-repeat: no-repeat; }
       .slider .slider__box .slider__container .slider__img {
         width: 100vw;
-        height: 100%; }
+        height: auto; }
     .slider .slider__box .slider__container--first {
       background-color: gray;
       background-image: url("img/blow-bubbles.jpg"); }
@@ -295,7 +294,7 @@ body {
         border-radius: 15px;
         padding-left: 59px;
         align-items: center;
-        font-size: 19px;
+        font-size: 20px;
         text-transform: capitalize; }
     .section .button .section__link--big {
       justify-content: center;
@@ -530,7 +529,7 @@ body {
         border-radius: 15px;
         padding-left: 59px;
         align-items: center;
-        font-size: 19px;
+        font-size: 20px;
         text-transform: capitalize; }
 
 .flex {
