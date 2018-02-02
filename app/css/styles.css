@@ -6,6 +6,10 @@
   font-family: Merydale;
   src: url(../fonts/MerydaleRegular.ttf); }
 
+@font-face {
+  font-family: Verdana;
+  src: url(../fonts/Verdana.ttf); }
+
 p {
   margin: 0px; }
 
@@ -137,6 +141,7 @@ body {
             display: flex;
             height: 40px;
             width: 100%;
+            text-transform: uppercase;
             justify-content: center;
             border-radius: 15px;
             padding-left: 59px;
@@ -163,6 +168,7 @@ body {
 
 .slider {
   width: 100%;
+  height: 170px;
   position: relative;
   background-color: black;
   overflow: hidden; }
@@ -262,7 +268,7 @@ body {
     font-family: "Calibri", sans-serif;
     font-weight: 500;
     line-height: 1.3em;
-    font-size: 1em;
+    font-size: 1.1em;
     padding-right: 20px; }
   .section .button {
     display: flex;
@@ -270,7 +276,7 @@ body {
     .section .button .section__link {
       display: flex;
       justify-content: flex-end;
-      width: 190px;
+      width: 165px;
       position: relative;
       transition: all 0.3s;
       margin-top: 20px; }
@@ -294,8 +300,10 @@ body {
         border-radius: 15px;
         padding-left: 59px;
         align-items: center;
-        font-size: 20px;
-        text-transform: capitalize; }
+        font-size: 12px;
+        font-weight: 600;
+        font-family: "Verdana";
+        text-transform: uppercase; }
     .section .button .section__link--big {
       justify-content: center;
       width: 220px; }
@@ -324,7 +332,7 @@ body {
     font-family: "Calibri", sans-serif;
     font-weight: 500;
     line-height: 1.3em;
-    font-size: 1em; }
+    font-size: 1.1em; }
     .section .content__paragraph--bold {
       font-weight: 900; }
 
@@ -402,7 +410,7 @@ body {
 
 .slider--carousel {
   width: 100%;
-  height: 200px;
+  height: 250px;
   background-color: black; }
   .slider--carousel .slider--carousel__container {
     position: relative;
@@ -492,7 +500,7 @@ body {
       font-weight: 500;
       padding-left: 5px;
       line-height: 1.3em;
-      font-size: 1em; }
+      font-size: 1.1em; }
     .section--photo .content .img--small {
       flex: 1;
       padding-left: 15px;
@@ -505,7 +513,7 @@ body {
     .section--photo .button .section__link {
       display: flex;
       justify-content: flex-end;
-      width: 190px;
+      width: 165px;
       position: relative;
       transition: all 0.3s;
       margin-top: 20px; }
@@ -529,8 +537,10 @@ body {
         border-radius: 15px;
         padding-left: 59px;
         align-items: center;
-        font-size: 20px;
-        text-transform: capitalize; }
+        font-weight: 600;
+        font-family: "Verdana";
+        font-size: 12px;
+        text-transform: uppercase; }
 
 .flex {
   margin-top: 40px; }
@@ -644,8 +654,8 @@ body {
         flex: 12;
         font-size: 14px;
         margin-left: 8px; }
-        .footer .footer__contact a .contact__info .footer__info .footer__info--lowecase {
-          text-transform: lowercase; }
+        .footer .footer__contact a .contact__info .footer__info .footer__info--lowercase {
+          text-transform: none; }
     .footer .footer__contact .contact__info:hover .footer__icon {
       opacity: 1; }
   .footer .footer__menu {
@@ -805,7 +815,7 @@ body {
 @media screen and (min-width: 400px) {
   .slider {
     width: 100%;
-    height: 220px; } }
+    height: 210px; } }
 
 @media screen and (min-width: 420px) {
   .section--photo .content .img--small {
@@ -854,7 +864,7 @@ body {
       padding: 5px 5px;
       font-size: 0.8em; }
   .section--photo .section__box .section__paragraph {
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.3em; }
   .section .content__photo .content__img {
     width: 114.25px;
@@ -869,7 +879,7 @@ body {
 
 @media screen and (min-width: 700px) {
   .slider {
-    height: 400px; } }
+    height: calc(100vh - 183px); } }
 
 @media screen and (min-width: 610px) {
   .flex {

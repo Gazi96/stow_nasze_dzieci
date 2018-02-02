@@ -153,6 +153,7 @@ body{
                         display: flex;
                         height: 40px;
                         width: 100%;
+                        text-transform: uppercase;
                         justify-content: center;
                         border-radius: 15px;
                         padding-left: 59px;
@@ -195,6 +196,7 @@ body{
 
 .slider {
     width: 100%;
+    height: 170px;
     position: relative;
     background-color: black;
     overflow: hidden;
@@ -330,7 +332,7 @@ body{
         font-family: $font2;
         font-weight: 500;
         line-height: 1.3em;
-        font-size: 1em;
+        font-size: 1.1em;
         padding-right: 20px;
     }
     .button{
@@ -339,7 +341,7 @@ body{
         .section__link{
                         display: flex;
                         justify-content: flex-end;
-                        width: 190px;
+                        width: 165px;
                         position: relative;
                         transition: all 0.3s;
                         margin-top: 20px;
@@ -364,8 +366,10 @@ body{
                             border-radius: 15px;
                             padding-left: 59px;
                             align-items: center;
-                            font-size: 20px;
-                            text-transform:capitalize;
+                            font-size: 12px;
+                            font-weight: 600;
+                            font-family: $font3;
+                            text-transform: uppercase;
                         }
 
         }
@@ -405,7 +409,7 @@ body{
             font-family: $font2;
             font-weight: 500;
             line-height: 1.3em;
-            font-size: 1em;
+            font-size: 1.1em;
             &--bold {
                 font-weight: 900;
             }
@@ -503,7 +507,7 @@ body{
 
 .slider--carousel{
     width: 100%;
-    height: 200px;
+    height: 250px;
     background-color: black;
     .slider--carousel__container{
         position: relative;
@@ -622,7 +626,7 @@ body{
             font-weight: 500;
             padding-left: 5px;
             line-height: 1.3em;
-            font-size: 1em;
+            font-size: 1.1em;
             }
 
             .img--small {
@@ -640,7 +644,7 @@ body{
         .section__link{
                         display: flex;
                         justify-content: flex-end;
-                        width: 190px;
+                        width: 165px;
                         position: relative;
                         transition: all 0.3s;
                         margin-top: 20px;
@@ -665,8 +669,10 @@ body{
                             border-radius: 15px;
                             padding-left: 59px;
                             align-items: center;
-                            font-size: 20px;
-                            text-transform:capitalize;
+                            font-weight: 600;
+                            font-family: $font3;
+                            font-size: 12px;
+                            text-transform: uppercase;
                         }
 
         }
@@ -815,8 +821,8 @@ body{
                 flex: 12;
                 font-size: 14px;
                 margin-left: 8px;
-                .footer__info--lowecase{
-                    text-transform: lowercase;
+                .footer__info--lowercase{
+                    text-transform: none;
                 }
             } 
         }
@@ -1028,7 +1034,7 @@ body{
 @media screen and (min-width: 400px){
     .slider {
         width: 100%;
-        height: 220px;
+        height: 210px;
     }
 }
 
@@ -1116,7 +1122,7 @@ body{
     {
         .section__box{
             .section__paragraph {
-                font-size: 1em;
+                font-size: 1.1em;
                 line-height: 1.3em;
             }
         }
@@ -1142,7 +1148,7 @@ body{
 
 @media screen and (min-width: 700px){
     .slider{
-        height: 400px;
+        height: calc(100vh - 183px);
     }
 }
 
