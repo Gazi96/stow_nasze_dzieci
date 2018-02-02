@@ -3,6 +3,8 @@ var hamburger = document.getElementsByClassName("hamburger")[0];
 var nav = document.getElementsByClassName("nav")[0];
 hamburger.addEventListener("click", drop);
 
+var slider__time = 5000;
+
 function drop()
 {
     hamburger.classList.toggle('hamburger--pushed')
@@ -50,7 +52,7 @@ function myPrev()
     content();
     
     clearTimeout(myTimer);
-    myTimer = setTimeout(showSlides, 3000);
+    myTimer = setTimeout(showSlides, slider__time);
 }
 
 function myNext()
@@ -72,11 +74,11 @@ function myNext()
     content();
     
     clearTimeout(myTimer);
-    myTimer = setTimeout(showSlides, 3000);
+    myTimer = setTimeout(showSlides, slider__time);
 
 }
 
-var myTimer = setTimeout(showSlides, 3000);
+var myTimer = setTimeout(showSlides, slider__time);
 
 function showSlides()
 {
@@ -99,7 +101,7 @@ function showSlides()
     backgroundColor();
     content();
     
-    myTimer = setTimeout(showSlides, 3000);
+    myTimer = setTimeout(showSlides, slider__time);
 }
 
 
@@ -130,7 +132,7 @@ var myFunction = function() {
                 backgroundColor();
                 
                 clearTimeout(myTimer);
-                myTimer = setTimeout(showSlides, 3000);
+                myTimer = setTimeout(showSlides, slider__time);
             }
             else
             {
@@ -151,7 +153,7 @@ var myFunction = function() {
                 backgroundColor();
 
                 clearTimeout(myTimer);
-                myTimer = setTimeout(showSlides, 3000);
+                myTimer = setTimeout(showSlides, slider__time);
             }
             
             backgroundColor();
