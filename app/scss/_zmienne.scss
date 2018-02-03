@@ -13,8 +13,8 @@ $green: rgb(127, 184, 0);
 
 @font-face
 {
-    font-family: Merydale;
-    src:url(../fonts/MerydaleRegular.ttf);
+    font-family: Calibri;
+    src:url(../fonts/Calibri.ttf);
 }
 
 @font-face
@@ -23,6 +23,6 @@ $green: rgb(127, 184, 0);
     src:url(../fonts/Verdana.ttf);
 }
 
-$font1: 'Merydale';
+$font1: 'Calibri', sans-serif;
 $font2: 'Calibri', sans-serif;
 $font3: 'Verdana';
