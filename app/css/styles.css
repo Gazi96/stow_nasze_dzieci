@@ -491,7 +491,7 @@ body {
     margin: 0;
     flex-basis: 100%;
     font-size: 23px;
-    font-family: "Verdana"; }
+    font-family: "Calibri", sans-serif; }
   .section--photo .section__headline--navy {
     background-color: #0d2c54; }
   .section--photo .content {
