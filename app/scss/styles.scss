@@ -1264,7 +1264,21 @@ body{
     
     .heading{
         margin: 25px auto;
-    }   
+    }
+    
+    .footer__contact {
+        width: 400px;
+    }
+    
+    .footer .footer__contact a .contact__info .footer__icon {
+        height: 35px;
+        width: 35px;
+        font-size: 23px;
+    }
+    
+    .footer .footer__contact a .contact__info .footer__info {
+    font-size: 20px;
+}
       
     
     
