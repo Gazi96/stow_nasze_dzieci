@@ -29,40 +29,52 @@
         <nav class="nav">
             <ul class="menu">
                 <li class="menu__item menu__item"><a href="" class="menu__link button--blue">
+                
                 <svg class="menu__svg svg--blue" title="Eye" role="img">
-                <use xlink:href="app/svg/map.svg#activity_color"/>
-                </svg>  
-                <div class="menu__content content--blue">strona główna</div>
+                <use xlink:href="app/svg/map.svg#home_color"/>
+                </svg>   
+                <div class="menu__content content--blue">
+                    <p class="content__text">strona główna</p>
+                </div>
                 </a></li>
                 <li class="menu__item menu__item"><a href="" class="menu__link button--green">
                 <svg class="menu__svg svg--green" title="Eye" role="img">
-                <use xlink:href="app/svg/map.svg#support_color"/>
-                </svg>  
-                <div class="menu__content content--green">aktualności</div>
+                <use xlink:href="app/svg/map.svg#news_color"/>
+                </svg>
+                
+                <div class="menu__content content--green">
+                    <p class="content__text">aktualności</p>
+                </div>
                 </a></li>
                 <li class="menu__item menu__item"><a href="" class="menu__link button--navy">
                 <svg class="menu__svg svg--navy" title="Eye" role="img">
-                <use xlink:href="app/svg/map.svg#contact_color"/>
+                <use xlink:href="app/svg/map.svg#activity_color"/>
                 </svg>  
-                <div class="menu__content content--navy">nasze działania</div>
+                <div class="menu__content content--navy">
+                    <p class="content__text">nasze działania</p>
+                </div>
                 </a></li>
                 <li class="menu__item menu__item"><a href="" class="menu__link button--orange">
                 <svg class="menu__svg svg--orange" title="Eye" role="img">
-                <use xlink:href="app/svg/map.svg#home_color"/>
-                </svg>  
-                <div class="menu__content content--orange">wsparcie</div>
+                <use xlink:href="app/svg/map.svg#support_color"/>
+                </svg>   
+                <div class="menu__content content--orange">
+                    <p class="content__text">wsparcie</p>
+                </div>
                 </a></li>
                <li class="menu__item menu__item"><a href="" class="menu__link button--yellow">
                 <svg class="menu__svg svg--yellow" title="Eye" role="img">
-                <use xlink:href="app/svg/map.svg#news_color"/>
+                <use xlink:href="app/svg/map.svg#contact_color"/>
                 </svg>  
-                <div class="menu__content content--yellow">kontakt</div>
+                <div class="menu__content content--yellow">
+                    <p class="content__text">kontakt</p>
+                </div>
                 </a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="container">
+        <div class="container--top">
         <h1 class="heading">Aktualności</h1>
         <div class="slider">
             <div class="slider__box">
@@ -101,10 +113,10 @@
         </div>
         </div>
         <div class="container">
-        <section class="section section--dashed">
+        <section class="section section--dashed section--flex">
             <div class="slidercontent">
                 <h1 class="section__headline section__headline--left">warsztaty teatralne 2018</h1>
-                <p class="section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maiores quidem nihil, veritatis impedit omnis reiciendis placeat, quo non ipsam.</p>
+                <p class="section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maiores quidem nihil.</p>
             </div>
             <div class="slidercontent">
                 <h1 class="section__headline section__headline--left">tekst 2</h1>
@@ -120,21 +132,23 @@
             </div>
             <div class="slidercontent">
                 <h1 class="section__headline section__headline--left">tekst 5</h1>
-                <p class="section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maiores quidem nihil, veritatis impedit omnis reiciendis placeat, quo non ipsam.</p>
+                <p class="section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maiores quidem nihil, veritatis.</p>
             </div>
             <div class="button">
                <a href="" class="section__link button--orange">
                 <svg class="section__svg svg--orange" title="Eye" role="img">
                 <use xlink:href="app/svg/map.svg#czytaj_wiecej"/>
                 </svg>  
-                <div class="section__content content--orange">Czytaj więcej</div>
+                <div class="section__content content--orange">
+                    <p class="content__text">Czytaj więcej</p>
+                </div>
                 </a>
             </div>
         </section>
         </div>
         <div class="container">   
-            <h1 class="heading">Wsparcie</h1>
-            <section class="section">
+            <h1 class="heading heading--margin">Wsparcie</h1>
+            <section class="section section--relative">
                 <h1 class="section__headline section__headline--center">jesteśmy organizacją pożytku publicznego</h1>
                 <div class="content">
                     <div class="content__photo">
@@ -147,13 +161,17 @@
                         <svg class="section__svg svg--orange" title="Eye" role="img">
                                 <use xlink:href="app/svg/map.svg#icon_hand_zl"/>
                                 </svg>
-                        <div class="section__content content--orange">przekaż dotacje</div>
+                        <div class="section__content content--orange">
+                            <p class="content__text">przekaż dotacje</p>
+                        </div>
                     </a>
                     <a href="" class="section__link section__link--big button--orange button--padding">
                         <svg class="section__svg svg--orange" title="Eye" role="img">
                                 <use xlink:href="app/svg/map.svg#icon_hand_%"/>
                                 </svg>
-                        <div class="section__content content--orange">przekaż 1%</div>
+                        <div class="section__content content--orange">
+                            <p class="content__text">przekaż 1%</p>
+                        </div>
                     </a>
                 </div>
             </section>
@@ -175,7 +193,9 @@
                         <svg class="section__svg svg--orange" title="Eye" role="img">
                                 <use xlink:href="app/svg/map.svg#hands"/>
                                 </svg>
-                        <div class="section__content content--orange">zostań partnerem</div>
+                        <div class="section__content content--orange">
+                            <p class="content__text">zostań partnerem</p>
+                        </div>
                     </a>
                 </div>
             </section>
@@ -185,19 +205,21 @@
             <section class="section--photo">
                 
                 <div class="content">
-                    <div class="content__img">
+                   <!-- <div class="content__img">
                         <img class="img--small" src="app/img/sport-zima.png" alt="">
-                    </div>
+                    </div>-->
                     <p class="section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum aliquam nihil reiciendis omnis molestiae obcaecati architecto molestias? Suscipit, id ex provident a veniam eos, amet enim maiores fuga beatae dolorum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur magnam beatae.</p>
-                </div>
-               <div class="button">
-               <a href="" class="section__link button--navy">
-                <svg class="section__svg svg--navy" title="Eye" role="img">
-                <use xlink:href="app/svg/map.svg#czytaj_wiecej"/>
-                </svg>  
-                <div class="section__content content--navy">Czytaj więcej</div>
-                </a>
-                </div>
+                    <div class="button">
+                       <a href="" class="section__link button--navy">
+                        <svg class="section__svg svg--navy" title="Eye" role="img">
+                        <use xlink:href="app/svg/map.svg#czytaj_wiecej"/>
+                        </svg>  
+                        <div class="section__content content--navy">
+                            <p class="content__text">Czytaj więcej</p>
+                        </div>
+                        </a>
+                        </div>
+                    </div>
             </section>
         </div>
     <div class="container">
@@ -207,6 +229,7 @@
                         <h2 class="section__headline--color section__headline--green">kolonie</h2>
                         <div class="section__container">
                             <img class="section__img" src="app/img/wycieczka.png" alt="">
+                            <img class="section__img section__img--desktop" src="app/img/wycieczka-desktop.png" alt="">
                         </div>
                         <button class="flex__button">zobacz szczegóły</button>
                     </a>
@@ -216,6 +239,7 @@
                     <h2 class="section__headline--color section__headline--blue">zimowiska</h2>
                     <div class="section__container">
                         <img class="section__img" src="app/img/zima.png" alt="">
+                        <img class="section__img section__img--desktop" src="app/img/zima-desktop.png" alt="">
                     </div>
                     <button class="flex__button">zobacz szczegóły</button>
                 </a>
@@ -225,6 +249,7 @@
                     <h2 class="section__headline--color section__headline--orange">imprezy szkolne</h2>
                     <div class="section__container">
                         <img class="section__img" src="app/img/imprezy%20szkolne.png" alt="">
+                        <img class="section__img section__img--desktop" src="app/img/zabawa-desktop.png" alt="">
                     </div>
                     <button class="flex__button">zobacz szczegóły</button>
                 </a>
@@ -234,6 +259,7 @@
                     <h2 class="section__headline--color section__headline--yellow">akcje charytatywne</h2>
                     <div class="section__container">
                         <img class="section__img" src="app/img/santa.png" alt="">
+                        <img class="section__img section__img--desktop" src="app/img/santa-desktop.png" alt="">
                     </div>
                     <button class="flex__button">zobacz szczegóły</button>
                 </a>
