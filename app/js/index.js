@@ -11,6 +11,16 @@ function drop()
     nav.classList.toggle('nav--drop');
 }
 
+
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 50) {
+         $('.header')[0].addClass('fix');
+    } else {
+         $('.header')[0].removeClass('fix');
+    }
+});
+
 //slider
 var slider = document.getElementsByClassName("slider__box")[0];
 var sliderList = document.getElementsByClassName("slider__container");

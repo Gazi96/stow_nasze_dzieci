@@ -39,14 +39,23 @@ body{
     text-transform: uppercase;
     font-family: $font2;
     font-weight: 700;
-}    
+}   
+
+.container--top{
+    margin-top: 125px;
+}
+
+
 .header{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    position: fixed;
+    height: 125px;
+    z-index: 2;
+    top: 0;
     &__logo{
         flex: 2;
         .header__img
@@ -194,8 +203,12 @@ body{
     
 }
 
+.fix{
+    background-color: aqua;
+}
+
 .slider {
-    width: 100%;
+    width: 80%;
     height: 170px;
     position: relative;
     background-color: black;
@@ -1439,9 +1452,7 @@ body{
         height: 114.3px;
     }
     
-    
-    
-     .section--relative{
+    .section--relative{
         position: relative;
         overflow: hidden;
         box-sizing: border-box; 
@@ -1472,7 +1483,7 @@ body{
     }
     
     .slider{
-        height: calc(100vh - 140px);
+        height: calc(100vh - 200px);
     }
     
     .section--flex{
