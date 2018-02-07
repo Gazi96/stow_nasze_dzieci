@@ -174,7 +174,8 @@ body {
   height: 170px;
   position: relative;
   background-color: black;
-  overflow: hidden; }
+  overflow: hidden;
+  background: rgba(10, 76, 97, 0.51); }
   .slider .slider__box {
     position: absolute;
     height: 100%;
@@ -187,10 +188,21 @@ body {
       height: 100%;
       background-position: center;
       background-size: 100% 100%;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      position: relative; }
       .slider .slider__box .slider__container .slider__img {
         width: 100vw;
         height: auto; }
+      .slider .slider__box .slider__container .content {
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 166, 237, 0.75);
+        text-align: center;
+        color: white;
+        width: 100vw;
+        padding: 50px 0px; }
     .slider .slider__box .slider__container--first {
       background-color: gray;
       background-image: url("img/blow-bubbles.jpg"); }
@@ -250,6 +262,16 @@ body {
     .slider .trapezoid__circle--orange {
       border-color: #f6511d; }
 
+/* .slider:before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 180, 0, 0.2);
+        top: 0;
+        left: 0;
+     z-index: 1;
+            }*/
 .section {
   padding-top: 0px;
   padding-bottom: 30px;
@@ -1119,7 +1141,7 @@ body {
     top: -25px;
     right: 0px; }
   .slider {
-    height: calc(100vh - 210px); }
+    height: calc(100vh - 140px); }
   .section--flex {
     display: flex;
     align-items: center;
