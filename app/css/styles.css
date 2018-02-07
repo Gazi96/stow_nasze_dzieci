@@ -176,7 +176,8 @@ body {
     transition: max-height 0.5s ease-out; }
 
 .fix {
-  background-color: aqua; }
+  background-color: white;
+  z-index: 15; }
 
 .slider {
   width: 80%;

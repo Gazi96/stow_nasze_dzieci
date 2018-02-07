@@ -15,11 +15,12 @@ function drop()
 
 $(window).scroll(function() {
     if ($(this).scrollTop() > 50) {
-         $('.header')[0].addClass('fix');
+         $('.header').addClass('fix');
     } else {
-         $('.header')[0].removeClass('fix');
+         $('.header').removeClass('fix');
     }
 });
+
 
 //slider
 var slider = document.getElementsByClassName("slider__box")[0];
