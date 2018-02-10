@@ -41,21 +41,12 @@ body{
     font-weight: 700;
 }   
 
-.container--top{
-    margin-top: 125px;
-}
-
-
 .header{
     width: 100vw;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    position: fixed;
-    height: 125px;
-    z-index: 2;
-    top: 0;
     &__logo{
         flex: 2;
         .header__img
@@ -160,6 +151,7 @@ body{
                         display: flex;
                         height: 40px;
                         width: 100%;
+                        /*z-index: 1;*/
                         text-transform: uppercase;
                         justify-content: center;
                         border-radius: 15px;
@@ -171,9 +163,19 @@ body{
                         overflow: hidden;
                     }
                 }
-                
-            
+                .menu__link--first:after, .menu__link--second:after, .menu__link--third:after, .menu__link--fourth:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 0px;
+                    width: 1px;
+                    height: 25px;
+                    background-color: black;
+                    transform: translateY(-50%);
+                    opacity: 0.4;
+                }
             }
+             
             .menu__item--navy{
                 border-color: $navy;
                 color: $navy;
@@ -200,7 +202,6 @@ body{
         max-height: 400px;
         transition: max-height 0.5s ease-out;
     }
-    
 }
 
 .fix{
@@ -212,7 +213,7 @@ body{
 }
 
 .slider {
-    width: 80%;
+    width: 100%;
     height: 170px;
     position: relative;
     background-color: black;
@@ -934,6 +935,88 @@ body{
     top: 0;
     left: 0;
     background-color: transparent;
+}    
+
+.menu{
+    .button--orange {
+        .svg--orange {
+            fill: white;
+            border: $orange;
+            background-color: $orange;
+            transition: all 0.3s;
+        }
+        .content--orange {
+            background-color: white;
+            border: 2px solid transparent;
+            color: $orange;
+            transition: all 0.3s;
+        }
+    }
+    
+    .button--yellow{
+        transition: all 0.3s;
+        .svg--yellow{
+            fill: white;
+            border: $yellow;
+            background-color: $yellow;
+            transition: all 0.3s;
+        }
+        .content--yellow{
+            background-color: white;
+            border: 2px solid white;
+            color: $yellow;
+            transition: all 0.3s;
+        } 
+    }
+
+    .button--blue{
+        transition: all 0.3s;
+        .svg--blue{
+            fill: white;
+            border: $blue;
+            background-color: $blue;
+            transition: all 0.3s;
+        }
+        .content--blue{
+            background-color: white;
+            border: 2px solid white;
+            color: $blue;
+            transition: all 0.3s;
+        } 
+
+    }
+
+.button--green{
+    transition: all 0.3s;
+    .svg--green{
+        fill: white;
+        border: $green;
+        background-color: $green;
+        transition: all 0.3s;
+    }
+    .content--green{
+        background-color: white;
+        border: 2px solid white;
+        color: $green;
+        transition: all 0.3s;
+    } 
+}
+
+.button--navy{
+    transition: all 0.3s;
+    .svg--navy{
+        fill: white;
+        border: $navy;
+        background-color: $navy;
+    }
+    .content--navy{
+        background-color: white;
+        border: 2px solid white;
+        color: $navy;
+        transition: all 0.3s;
+    }
+}
+    
 }
 
 .button--orange{
@@ -949,7 +1032,6 @@ body{
         color: white;
         transition: all 0.3s;
     }
-
 }
 
 .button--orange:hover{
@@ -961,12 +1043,17 @@ body{
     .content--orange{
         border: 2px solid $orange;
         color: $orange;
+        background-color: $orange;
     }
     .menu__content::before{
         background-color: rgba(255,255,255,0.7);
     }
     .section__content::before{
         background-color: rgba(255,255,255,0.7);
+    }
+    
+    .menu__link--third:after, .menu__link--fourth:after{
+        background-color: transparent;
     }
 }
 
@@ -995,6 +1082,7 @@ body{
     .content--yellow{
         border: 2px solid $yellow;
         color: $yellow;
+        background-color: $yellow;
     } 
     .menu__content::before{
         background-color: rgba(255,255,255,0.7);
@@ -1031,6 +1119,7 @@ body{
     .content--blue{
         border: 2px solid $blue;
         color: $blue;
+        background-color: $blue;
     } 
     .menu__content::before{
         background-color: rgba(255,255,255,0.7);
@@ -1065,6 +1154,7 @@ body{
     .content--green{
         border: 2px solid $green;
         color: $green;
+        background-color: $green;
     } 
     .menu__content::before{
         background-color: rgba(255,255,255,0.7);
@@ -1099,6 +1189,7 @@ body{
         position: relative;
         border: 2px solid $navy;
         color: $navy;
+        background-color: $navy;
         overflow: hidden;
     }
     .menu__content::before{
@@ -1108,6 +1199,147 @@ body{
         background-color: rgba(255,255,255,0.7);
     }
 }
+
+
+.home {
+    .header {
+        .nav {
+            .menu {
+                .menu__link--first:after {
+                    background-color: transparent;
+                }
+                .button--blue {
+                    transition: all 0.3s;
+                    .svg--blue {
+                        fill: $blue;
+                        border: $blue;
+                        background-color: white;
+                        transition: all 0.3s;
+                    }
+                    .content--blue {
+                        background-color: $blue;
+                        border: 2px solid $blue;
+                        color: white;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.news {
+    .header {
+        .nav {
+            .menu {
+                .menu__link--first:after,
+                .menu__link--second:after {
+                    background-color: transparent;
+                }
+                .button--green {
+                    transition: all 0.3s;
+                    .svg--green {
+                        fill: $green;
+                        border: $green;
+                        background-color: white;
+                        transition: all 0.3s;
+                    }
+                    .content--green {
+                        background-color: $green;
+                        border: 2px solid $green;
+                        color: white;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.activity {
+    .header {
+        .nav {
+            .menu {
+                .menu__link--second:after,
+                .menu__link--third:after {
+                    background-color: transparent;
+                }
+                .button--navy{
+                transition: all 0.3s;
+                .svg--navy {
+                    fill: $navy;
+                    border: $navy;
+                    background-color: white;
+                    transition: all 0.3s;
+                }
+                .content--navy {
+                    background-color: $navy;
+                    border: 2px solid $navy;
+                    color: white;
+                    transition: all 0.3s;
+                }
+                }
+            }
+        }
+    }
+}
+
+.help {
+    .header {
+        .nav {
+                .menu {
+                    .menu__link--third:after,
+                .menu__link--fourth:after {
+                background-color: transparent;
+                    }
+                    .button--orange {
+                        transition: all 0.3s;
+                        .svg--orange {
+                            fill: $orange;
+                            border: $orange;
+                            background-color: white;
+                            transition: all 0.3s;
+                        }
+                        .content--orange {
+                            background-color: $orange;
+                            border: 2px solid $orange;
+                            color: white;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+.contact {
+    .header {
+        .nav {
+            .menu {
+                .menu__link--fourth:after {
+                background-color: transparent;
+                }
+                .button--yellow {
+                    transition: all 0.3s;
+                    .svg--yellow {
+                        fill: $yellow;
+                        border: $yellow;
+                        background-color: white;
+                        transition: all 0.3s;
+                    }
+                    .content--yellow {
+                        background-color: $yellow;
+                        border: 2px solid $yellow;
+                        color: white;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 .content__text{
         z-index: 10;
@@ -1395,15 +1627,16 @@ body{
             flex: 1;
             padding: 0px;
             margin: 0px;
+            justify-content: flex-end;
             .menu__item{
                 font-size: 13px;        
                 text-transform: uppercase;
-                margin: auto;
                 height: 50px;
                 margin-bottom: 30px;
                 margin-top: 0px;
                 border: none;
-                flex: 1;
+                margin: 0px;
+                flex-basis: 210px;
                 text-align: center;
                 margin-bottom: 0px;
                 border-bottom-color: transparent;
@@ -1452,7 +1685,7 @@ body{
         overflow: hidden;
     }
      .header .header__logo .header__img{
-        width: 300px;
+        width: 200px;
         height: 114.3px;
     }
     
@@ -1527,9 +1760,17 @@ body{
         padding: 0px 20px;
     }
     
+    /*.slider{
+        max-width: 1150px;
+        margin: auto;
+    }*/
+    
+    
 }
 
 @media screen and (min-width: 1000px){
+    
+    
     .flex .section--photo {
         flex-basis: 420px;
     }
@@ -1553,6 +1794,10 @@ body{
 }
 
 @media screen and (min-width: 1100px){
+    .header .header__logo .header__img{
+        width: 300px;
+        height: 114.3px;
+    }
     .section .content__photo .content__img {
         width: 200px;
         height: 200px;
@@ -1560,11 +1805,65 @@ body{
     .section--relative .content__paragraph{
         padding-right: 200px;
     }
+    
 }
 
 @media screen and (min-width: 1200px){
     .header .nav .menu .menu__item .menu__link .menu__content {
         font-size: 15px;
+    }
+    .header{
+        height: 125px;
+        top: 0;
+        position: fixed;
+    }
+    
+    .container--top{
+        margin-top: 125px;
+    }
+    
+    .fix{
+        height: 80px;
+        border-width: 6px;
+    }
+    
+    .fix .header__logo .header__img
+    {
+        width: 190px;
+        height: auto;
+        padding-top: 2px;
+        box-sizing: border-box;
+    }
+
+}
+
+@media screen and (min-width: 1600px){
+    .header{
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+    }
+    .main, .footer, .header{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .slider .slider__box .slider__container .slider__img {
+        width: 1400px;
+    }
+    
+    .main, .header{
+        background-color: white;
+    }
+    
+    body{
+        background-color: $navy;
+    }
+    
+    .slider .slider__box .slider__container .content{
+        left: 25%;
+        width: 1400px;
     }
 }
 

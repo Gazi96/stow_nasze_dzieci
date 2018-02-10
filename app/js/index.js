@@ -12,15 +12,65 @@ function drop()
 }
 
 
-
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 50) {
-         $('.header').addClass('fix');
-    } else {
-         $('.header').removeClass('fix');
-    }
+$(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+             $('.header').addClass('fix');
+        } else {
+             $('.header').removeClass('fix');
+        }
+    });
+        
+    var test = $(".menu__link");
+    
+    test.eq(0).hover(
+      function() {
+        $( this ).removeClass( "menu__link--first" );
+      }
+      ,function() {
+        $( this ).addClass( "menu__link--first" );
+      }
+    );
+    test.eq(1).hover(
+      function() {
+        $(".menu__link").eq(0).removeClass( "menu__link--first" );
+          $( this ).removeClass( "menu__link--second" );
+      }
+      ,function() {
+        $( ".menu__link" ).eq(0).addClass( "menu__link--first" );
+        $( this ).addClass( "menu__link--second" );
+      }
+    );
+    test.eq(2).hover(
+      function() {
+        $(".menu__link").eq(1).removeClass( "menu__link--second" );
+        $( this ).removeClass( "menu__link--third" );
+      }
+      ,function() {
+        $(".menu__link").eq(1).addClass( "menu__link--second" );
+        $( this ).addClass( "menu__link--third" );
+      }
+    );
+     test.eq(3).hover(
+      function() {
+        $(".menu__link").eq(2).removeClass( "menu__link--third" );
+        $( this ).removeClass( "menu__link--fourth" );
+      }
+      ,function() {
+        $(".menu__link").eq(2).addClass( "menu__link--third" );
+        $( this ).addClass( "menu__link--fourth" );
+      }
+    );
+    test.eq(4).hover(
+      function() {
+        $(".menu__link").eq(3).removeClass( "menu__link--fourth" );
+      }
+      ,function() {
+        $(".menu__link").eq(3).addClass( "menu__link--fourth" );
+      }
+    );
+    
 });
-
 
 //slider
 var slider = document.getElementsByClassName("slider__box")[0];
@@ -32,8 +82,6 @@ var next = document.getElementsByClassName("next")[0];
 var sliderContent = document.getElementsByClassName("slidercontent");
 var buttonSlider = document.getElementsByClassName("section__link")[0];
 var trapezoid = document.getElementsByClassName("trapezoid__circle");
-
-console.log(buttonSlider);
 
 prev.addEventListener("click", myPrev);
 next.addEventListener("click", myNext);
@@ -307,7 +355,7 @@ var myFunction = function() {
 
 
 
-var slider__carousel = document.getElementsByClassName('slider--carousel');
+/*var slider__carousel = document.getElementsByClassName('slider--carousel');
 var slider__img = document.getElementsByClassName('carousel__img');
 
 var slider__prev = document.getElementsByClassName("carousel__prev")[0];
@@ -324,7 +372,7 @@ slider__img[4].style.left = "100vw";
 function sliderPrev()
 {   
     console.log(tab__slider);
-    slider__img[4].style.left = "0vw";
+    slider__img[4].style.left = "0vw";*/
     
     
     /*slider__img[tab__slider[4]-1].style.display = "none";
@@ -339,11 +387,13 @@ function sliderPrev()
     tab__slider.splice(tab__slider.length-1,1);*/
         
     
+/*
     console.log(tab__slider);
 }
+*/
 
-function sliderNext()
-{
+/*function sliderNext()
+{*/
     /*slider__img[tab__slider[tab__slider.length - 2]].classList+=" slider__right";
     slider__img[tab__slider[tab__slider.length - 2]].classList.remove("slider__right");
     slider__img[tab__slider[tab__slider.length - 2]].classList+=" slider__center";
@@ -351,24 +401,24 @@ function sliderNext()
     tab__slider.unshift(tab__slider[tab__slider.length-1]);
     tab__slider.splice(tab__slider.length-1,1);    */
     
-    slider__img[tab__slider[4]-1].style.display = "none";
+/*    slider__img[tab__slider[4]-1].style.display = "none";
     slider__img[tab__slider[0]-1].style.display = "none";
     
     slider__img[tab__slider[3]-1].style.display = "none";
-    slider__img[tab__slider[3]-1].style.display = "block";
+    slider__img[tab__slider[3]-1].style.display = "block";*/
     
    /* slider__img[tab__slider[3]-1].classList += " slider__left";
     slider__img[tab__slider[3]-1].classList.remove("slider__left");
     
     slider__img[tab__slider[3]-1].classList += " slider__center";*/
     
-    slider__img[tab__slider[3]-1].style.zIndex = "5";
+/*    slider__img[tab__slider[3]-1].style.zIndex = "5";
     slider__img[tab__slider[3]-1].style.left = "0%";
     slider__img[tab__slider[3]-1].style.left = "100%";
     
     tab__slider.unshift(tab__slider[tab__slider.length-1]);
     tab__slider.splice(tab__slider.length-1,1);
-}
+}*/
 
 
 
