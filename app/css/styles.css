@@ -50,7 +50,9 @@ body {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 3; }
   .header__logo {
     flex: 2; }
     .header__logo .header__img {
@@ -181,7 +183,8 @@ body {
 
 .fix {
   background-color: white;
-  z-index: 15; }
+  z-index: 15;
+  box-sizing: border-box; }
 
 .slider {
   width: 100%;
@@ -1375,7 +1378,7 @@ body {
   .container--top {
     margin-top: 125px; }
   .fix {
-    height: 80px;
+    height: 90px;
     border-width: 6px; }
   .fix .header__logo .header__img {
     width: 190px;

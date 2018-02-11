@@ -47,6 +47,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    background-color: white;
+    z-index: 3;
     &__logo{
         flex: 2;
         .header__img
@@ -207,9 +209,7 @@ body{
 .fix{
     background-color: white;
     z-index: 15;
-}
-
-.fix{    
+    box-sizing: border-box;
 }
 
 .slider {
@@ -1823,7 +1823,7 @@ body{
     }
     
     .fix{
-        height: 80px;
+        height: 90px;
         border-width: 6px;
     }
     
