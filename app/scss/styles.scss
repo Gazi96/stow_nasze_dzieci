@@ -1886,9 +1886,9 @@ body{
         
     .fix{
         position: fixed;
-        /*top: 0;
-        left: 50%;*/
-        /*transform: translateX(-50%);*/
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
         height: 90px;
     }
     
