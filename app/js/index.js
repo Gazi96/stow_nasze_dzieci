@@ -14,7 +14,7 @@ function drop()
 
 $(function() {
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 50) {
+        if ($(this).scrollTop() > 40) {
              $('.header').addClass('fix');
         } else {
              $('.header').removeClass('fix');
