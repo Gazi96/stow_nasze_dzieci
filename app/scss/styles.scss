@@ -1695,14 +1695,16 @@ body{
         transition: max-height 0.5s ease-out;
         overflow:inherit;
         border: 0px;
+        justify-content: flex-end;
         .menu{
             display: flex;
-            flex: 1;
+            flex: none;
             padding: 0px;
             margin: 0px;
             justify-content: flex-end;
             height: 100%;
             padding-top: 68px;
+            flex-basis: 1200px; 
             .menu__item{
                 font-size: 13px;        
                 text-transform: uppercase;
@@ -1938,11 +1940,8 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
-    .head{
-        max-width: 1400px;
-    }
     
-    .main, .footer, .header{
+    .main, .footer{
         max-width: 1400px;
         margin-left: auto;
         margin-right: auto;
