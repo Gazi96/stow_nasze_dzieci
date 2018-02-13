@@ -228,9 +228,7 @@ body{
         transition:  width 0.5s, height 0.5s;
 }
 
-.main--margin{
-    margin-top: 125px;
-}
+
 
 .slider {
     width: 100%;
@@ -1906,6 +1904,10 @@ body{
         
     }
     
+    /*.head{
+        height: 128px;
+    }*/
+    
     .fix .header__logo .header__img
     {
         width: 190px;
@@ -1917,6 +1919,10 @@ body{
     
     .fix .nav .menu{
         padding-top: 30px;
+    }
+    
+    .main--margin{
+        margin-top: 125px;
     }
 
 }
