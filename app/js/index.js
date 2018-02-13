@@ -14,10 +14,12 @@ function drop()
 
 $(function() {
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 30) {
+        if ($(this).scrollTop() > 20) {
              $('.header').addClass('fix');
+            $('.main').addClass('main--margin');
         } else {
              $('.header').removeClass('fix');
+             $('.main').removeClass('main--margin');
         }
     });
         
