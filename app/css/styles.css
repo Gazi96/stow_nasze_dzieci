@@ -56,7 +56,10 @@ body {
     flex: 1; }
     .header__logo .header__img {
       width: 100%;
-      height: auto; }
+      height: auto;
+      -webkit-transition: width 0.5s,height 0.5s;
+      /* For Safari 3.1 to 6.0 */
+      transition: width 0.5s, height 0.5s; }
   .header .mobile {
     position: relative;
     display: flex;
@@ -1435,15 +1438,18 @@ body {
     position: static; }
   .fix {
     position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    /*top: 0;
+        left: 50%;*/
+    /*transform: translateX(-50%);*/
     height: 90px; }
   .fix .header__logo .header__img {
     width: 190px;
     height: auto;
     padding-top: 2px;
-    box-sizing: border-box; } }
+    box-sizing: border-box;
+    -webkit-transition: width 0.5s,height 0.5s;
+    /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s, height 0.5s; } }
 
 @media screen and (min-width: 1600px) {
   .header {
