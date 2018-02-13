@@ -1455,9 +1455,9 @@ body {
     -webkit-transition: width 0.5s,height 0.5s;
     /* For Safari 3.1 to 6.0 */
     transition: width 0.5s, height 0.5s; }
-  /*.head{
-        height: 128px;
-    }*/
+  .head {
+    height: 128px;
+    background-color: #00a6ed; }
   .fix .header__logo .header__img {
     width: 190px;
     height: auto;
@@ -1466,13 +1466,18 @@ body {
   .fix .nav .menu {
     padding-top: 30px; }
   .main--margin {
-    margin-top: 125px; } }
+    margin-top: 80px; } }
 
 @media screen and (min-width: 1600px) {
   .header {
     background-color: white;
     margin-left: auto;
     margin-right: auto; }
+  .head {
+    margin-left: auto;
+    margin-right: auto; }
+  .head {
+    max-width: 1400px; }
   .main, .footer, .header {
     max-width: 1400px;
     margin-left: auto;

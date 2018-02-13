@@ -1904,9 +1904,10 @@ body{
         
     }
     
-    /*.head{
+    .head{
         height: 128px;
-    }*/
+        background-color: $blue;
+    }
     
     .fix .header__logo .header__img
     {
@@ -1922,7 +1923,7 @@ body{
     }
     
     .main--margin{
-        margin-top: 125px;
+        margin-top: 80px;
     }
 
 }
@@ -1933,6 +1934,14 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
+    .head{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .head{
+        max-width: 1400px;
+    }
+    
     .main, .footer, .header{
         max-width: 1400px;
         margin-left: auto;

@@ -15,11 +15,11 @@ function drop()
 $(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 20) {
-            $('.main').addClass('main--margin');
+            /*$('.main').addClass('main--margin');*/
              $('.header').addClass('fix');
             
         } else {
-             $('.main').removeClass('main--margin');
+             /*$('.main').removeClass('main--margin');*/
              $('.header').removeClass('fix');
         }
     });
