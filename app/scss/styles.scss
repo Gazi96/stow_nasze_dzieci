@@ -42,16 +42,14 @@ body{
 }   
 
 .header{
-    width: 100vw;
-    margin: auto;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    box-sizing: border-box;
+    justify-content: space-between;    
     background-color: white;
-    position: static;
     z-index: 3;
     &__logo{
-        flex: 2;
+        flex: 1;
         .header__img
         {
             width: 100%;
@@ -59,18 +57,25 @@ body{
         }
     }
     .mobile{
-        flex: 1;
-        flex-wrap: wrap;
+        position: relative;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
+        align-self: flex-end;
+        height: 64px;
+        width: 80px;
+        background-color: $blue;
+        box-sizing: border-box;
+        padding-top: 12px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         .hamburger{
-            width: 65px;
-            height: 65px;
-            border: 4px solid $yellow;
+            width: 50px;
+            height: 50px;
+            border: 1.5px solid white;
             border-radius: 50%;
             cursor: pointer;
-            padding: 15px 15px;
+            padding: 10px 10px;
             box-sizing: border-box;
             display: flex;
             justify-content: space-around;
@@ -79,17 +84,17 @@ body{
             &__item--navy{
                 height: 3px;
                 width: 90%;
-                background-color: $navy;
+                background-color: white;
             }
             &__item--orange{
                 height: 3px;
                 width: 90%;
-                background-color:  $orange;
+                background-color:  white;
             }
             &__item--green{
                 height: 3px;
                 width: 90%;
-                background-color:  $green;
+                background-color:  white;
             }
         }
         
@@ -120,6 +125,7 @@ body{
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.5s ease-out;
+        border: 3px solid $blue;
         .menu{
             list-style-type: none;
             padding: 0px;
@@ -202,6 +208,8 @@ body{
         }
     }
     .nav--drop{
+        border-bottom-width: 8px; 
+        flex-basis: 100%;
         max-height: 400px;
         transition: max-height 0.5s ease-out;
     }
@@ -210,7 +218,6 @@ body{
 .fix{
     background-color: white;
     z-index: 15;
-    box-sizing: border-box;
 }
 
 .slider {
@@ -936,9 +943,10 @@ body{
     top: 0;
     left: 0;
     background-color: transparent;
-}    
+}
 
-.menu{
+
+/*.menu{
     .button--orange {
         .svg--orange {
             fill: white;
@@ -987,6 +995,7 @@ body{
 
     }
 
+
 .button--green{
     transition: all 0.3s;
     .svg--green{
@@ -1018,7 +1027,7 @@ body{
     }
 }
     
-}
+}*/
 
 .button--orange{
     .svg--orange{
@@ -1350,6 +1359,14 @@ body{
     display: none;
 }
 
+@media screen and (min-width: 350px){
+    .header__logo{
+        flex: none;
+        flex-basis: 250px;
+    }  
+}
+
+
 @media screen and (min-width: 400px){
     .slider {
         width: 100%;
@@ -1375,11 +1392,11 @@ body{
 
 @media screen and (min-width: 420px) {
     .header{
-        width: 90%;
+        width: 100%;
         margin: auto;
-        .header__img{
+        /*.header__img{
             margin-left: -20px;
-        }
+        }*/
     }
     
     
@@ -1555,6 +1572,88 @@ body{
     .footer .footer__contact a .contact__info .footer__info {
     font-size: 20px;
 }
+    
+    .menu{
+    .button--orange {
+        .svg--orange {
+            fill: white;
+            border: $orange;
+            background-color: $orange;
+            transition: all 0.3s;
+        }
+        .content--orange {
+            background-color: white;
+            border: 2px solid transparent;
+            color: $orange;
+            transition: all 0.3s;
+        }
+    }
+    
+    .button--yellow{
+        transition: all 0.3s;
+        .svg--yellow{
+            fill: white;
+            border: $yellow;
+            background-color: $yellow;
+            transition: all 0.3s;
+        }
+        .content--yellow{
+            background-color: white;
+            border: 2px solid white;
+            color: $yellow;
+            transition: all 0.3s;
+        } 
+    }
+
+    .button--blue{
+        transition: all 0.3s;
+        .svg--blue{
+            fill: white;
+            border: $blue;
+            background-color: $blue;
+            transition: all 0.3s;
+        }
+        .content--blue{
+            background-color: white;
+            border: 2px solid white;
+            color: $blue;
+            transition: all 0.3s;
+        } 
+
+    }
+
+.button--green{
+    transition: all 0.3s;
+    .svg--green{
+        fill: white;
+        border: $green;
+        background-color: $green;
+        transition: all 0.3s;
+    }
+    .content--green{
+        background-color: white;
+        border: 2px solid white;
+        color: $green;
+        transition: all 0.3s;
+    } 
+}
+
+.button--navy{
+    transition: all 0.3s;
+    .svg--navy{
+        fill: white;
+        border: $navy;
+        background-color: $navy;
+    }
+    .content--navy{
+        background-color: white;
+        border: 2px solid white;
+        color: $navy;
+        transition: all 0.3s;
+    }
+}
+    
+}
       
     
     
@@ -1565,56 +1664,18 @@ body{
     box-sizing: border-box;
     width: 100%;
     border-bottom: 10px solid $blue;
-    
     .header__logo{
         flex: none;
+        margin-left: auto;
+        margin-right: auto;
         .header__img{
         width: 300px;
         height: 114.3px;
-        margin-left: 0px;
+        
     } 
     }
     .mobile{
-        flex: 1;
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex: 0;
         display: none;
-        .hamburger{
-            width: 65px;
-            height: 65px;
-            border: 4px solid $yellow;
-            border-radius: 50%;
-            cursor: pointer;
-            padding: 15px 15px;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: column;
-        }
-        
-        .hamburger--pushed{
-            border: 4px solid $navy;
-            background-color: $navy;
-            .hamburger__item--navy{
-                height: 3px;
-                width: 90%;
-                background-color: white;
-            }
-            .hamburger__item--orange{
-                height: 3px;
-                width: 90%;
-                background-color:  white;
-            }
-            .hamburger__item--green{
-                height: 3px;
-                width: 90%;
-                background-color:  white;
-            }
-        }
     }
     
     .nav{
@@ -1624,6 +1685,7 @@ body{
         max-height: none;
         transition: max-height 0.5s ease-out;
         overflow:inherit;
+        border: 0px;
         .menu{
             display: flex;
             flex: 1;
@@ -1662,7 +1724,7 @@ body{
                         display: flex;
                         height: 50px;
                         width: 100%;
-                        padding-left: 35px;
+                        padding-left: 38px;
                         font-size: 12px;
                         border-radius: 0px;
                         border-top-left-radius: 8px;
@@ -1815,18 +1877,17 @@ body{
         font-size: 15px;
     }
     .header{
-        height: 125px;
-        top: 0;
+        
+        box-sizing: border-box;
         position: static;
     }
-    
-    .container--top{
-        margin-top: 125px;
-    }
-    
+        
     .fix{
-        height: 90px;
         position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 90px;
     }
     
     .fix .header__logo .header__img
@@ -1841,9 +1902,9 @@ body{
 
 @media screen and (min-width: 1600px){
     .header{
-        left: 50%;
-        transform: translateX(-50%);
         background-color: white;
+        margin-left: auto;
+        margin-right: auto;
     }
     .main, .footer, .header{
         max-width: 1400px;
@@ -1860,11 +1921,12 @@ body{
     }
     
     body{
-        background-color: $navy;
+        background-color: white;
     }
     
     .slider .slider__box .slider__container .content{
-        left: 25%;
+        left: 50vw;
+        transform: translateX(-50vw);    
         width: 1400px;
     }
 }
