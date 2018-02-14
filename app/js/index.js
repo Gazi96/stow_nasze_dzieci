@@ -67,9 +67,19 @@ $(function() {
     test.eq(4).hover(
       function() {
         $(".menu__link").eq(3).removeClass( "menu__link--fourth" );
+        $( this ).removeClass( "menu__link--five" );
       }
       ,function() {
         $(".menu__link").eq(3).addClass( "menu__link--fourth" );
+        $( this ).addClass( "menu__link--five" );
+      }
+    );
+    test.eq(5).hover(
+      function() {
+        $(".menu__link").eq(4).removeClass( "menu__link--five" );
+      }
+      ,function() {
+        $(".menu__link").eq(4).addClass( "menu__link--five" );
       }
     );
     

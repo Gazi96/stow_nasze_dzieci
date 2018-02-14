@@ -11,11 +11,15 @@ $green: rgb(127, 184, 0);
     src:url(../fonts/Calibri.ttf);
 }
 
-@font-face
-{
-    font-family: Calibri;
-    src:url(../fonts/Calibri.ttf);
+@font-face {
+    font-family: 'marydaleregular';
+    src: url('../fonts/marydale-webfont.woff2') format('woff2'),
+         url('../fonts/marydale-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
 
 @font-face
 {
@@ -26,3 +30,12 @@ $green: rgb(127, 184, 0);
 $font1: 'Calibri', sans-serif;
 $font2: 'Calibri', sans-serif;
 $font3: 'Verdana';
+$font4: marydaleregular;
+
+
+$font5: 'Pacifico', cursive;
+$font6: 'Dancing Script', cursive;
+$font7: 'Great Vibes', cursive;
+$font8: 'Marck Script', cursive;
+$font9: 'Allura', cursive;
+$font10: 'Clicker Script', cursive;
