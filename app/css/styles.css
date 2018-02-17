@@ -1516,7 +1516,6 @@ body {
 .section {
   margin: 0px;
   width: 100%;
-  background-color: #00a6ed;
   padding: 70px 140px;
   box-sizing: border-box; }
   .section .container {
@@ -1560,6 +1559,9 @@ body {
       top: -25px;
       left: 50%;
       transform: translateX(-50%); }
+
+.section--blue {
+  background-color: #00a6ed; }
 
 .article {
   max-width: 1400px;

@@ -1926,7 +1926,7 @@ body {
 .section {
     margin: 0px;
     width: 100%;
-    background-color: $blue;
+    
     padding: 70px 140px;
     box-sizing: border-box;
     .container {
@@ -1976,6 +1976,9 @@ body {
             transform: translateX(-50%);
         }
     }
+}
+.section--blue{
+    background-color: $blue;
 }
 
 .article {
@@ -2151,7 +2154,7 @@ body {
         height: auto;
     }
     .section.section--blue {
-        padding: 70px 30px;
+        padding: 70px 30px; 
     }
     .section.section--blue .container .container__text {
         margin-top: 20px;
