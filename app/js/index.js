@@ -1,14 +1,29 @@
 //menu
+var mobile = document.getElementsByClassName("mobile")[0];
 var hamburger = document.getElementsByClassName("hamburger")[0];
 var nav = document.getElementsByClassName("nav")[0];
 hamburger.addEventListener("click", drop);
 
+var hamburger__span = document.getElementsByClassName("hamburger__item--white");
 var slider__time = 5000;
 
 function drop()
 {
-    hamburger.classList.toggle('hamburger--pushed')
+    hamburger.classList.toggle('hamburger--pushed');
     nav.classList.toggle('nav--drop');
+    var backColor = window.getComputedStyle( mobile,null).getPropertyValue('background-color');      
+    
+    if(hamburger__span[0].style.backgroundColor == backColor){
+        hamburger__span[0].style.backgroundColor = "white";
+        hamburger__span[1].style.backgroundColor = "white";
+        hamburger__span[2].style.backgroundColor = "white";
+    }
+    else{
+        hamburger__span[0].style.backgroundColor = backColor;
+        hamburger__span[1].style.backgroundColor = backColor;
+        hamburger__span[2].style.backgroundColor = backColor;
+    }
+    
 }
 
 
