@@ -65,11 +65,8 @@
   </g>
 </symbol>
     
-    
-
 <symbol id="hands" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60">
     <defs>
-       
         <mask id="mask" x="12.87" y="32.56" width="15.29" height="16.35" maskUnits="userSpaceOnUse">
             <rect class="cls-1" x="12.87" y="32.56" width="15.29" height="16.35" />
             <g>
