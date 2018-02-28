@@ -81,12 +81,12 @@ $(function() {
     );
     test.eq(4).hover(
       function() {
-        $(".menu__link").eq(3).removeClass( "menu__link--fourth" );
-        $( this ).removeClass( "menu__link--five" );
+        $(".menu__link").eq(3).removeClass( "menu__link--fourth");
+        $( this ).eq(4).removeClass("menu__link--five");
       }
       ,function() {
         $(".menu__link").eq(3).addClass( "menu__link--fourth" );
-        $( this ).addClass( "menu__link--five" );
+        $( this ).eq(4).addClass( "menu__link--five" );
       }
     );
     test.eq(5).hover(
@@ -111,8 +111,8 @@ var sliderContent = document.getElementsByClassName("slidercontent");
 var buttonSlider = document.getElementsByClassName("section__link")[0];
 var trapezoid = document.getElementsByClassName("trapezoid__circle");
 
-prev.addEventListener("click", myPrev);
-next.addEventListener("click", myNext);
+/*prev.addEventListener("click", myPrev);
+next.addEventListener("click", myNext);*/
 
 var current = 0;
 
