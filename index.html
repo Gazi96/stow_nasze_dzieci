@@ -10,10 +10,15 @@
     <link rel="stylesheet" href="app/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Kalam:300,400,700" rel="stylesheet">  
     
+   
+   <link rel="stylesheet" href="slick-1.8.0/slick/slick.css">
+   
+   <link rel="stylesheet" href="slick-1.8.0/slick/slick-theme.css">
+    
     <script src="app/js/svg4everybody-master/dist/svg4everybody.js"></script>
     <script>svg4everybody(); // run it now or whenever you are ready</script>
 </head>
-<body class="home">
+<body class="home" id="page">
    <div class="cont">
     <header class="head">
     <header class="head">
@@ -98,216 +103,281 @@
             </div>
         </header>
     <main class="main">
-        <div class="container--top">
-        <!--<h1 class="heading">Aktualności</h1>-->
-        <div class="slider">
-            <div class="slider__box">
-                <div  class="slider__container slider__container--first">
-                    <img class="slider__img" src="app/img/blow-bubbles.jpg" alt="">
-                    <div class="content" style="background-color: rgba(255, 180, 0,0.75);">
-                    <h1 class="content__headline">Warsztaty teatralne 2018</h1>
-                    <p class="content__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, delectus hic dolores perspiciatis maxime molestiae quos sint.</p>
+        <section class="section section--home section--slider">
+            <div class="container">
+            <div class="box">
+                    <div class="container__photo">
+                        <div class="container__cont">
+                            <img class="container__img" src="app/img/blow-bubbles.jpg" alt="">
+                        </div>
+                    <div class="container__box">
+                        <img class="container__sign" src="app/img/pinezka--yellow.png" alt="sekcja fundacji nasze dzieci" alt="sekcja fundacji nasze dzieci">
+                        <h1 class="container__headline">Animacjeasd dla dzieci</h1>
+                        <p class="container__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quam nam rem tenetur eaque, vero assumenda et officiis iure.</p>
+                        <div class="button">
+                            <a href="" class="section__link button--yellow">
+                                <svg class="section__svg svg--yellow" role="img">
+                                        <use xlink:href="app/svg/map.svg#czytaj_wiecej"/>
+                                        </svg>
+                                <div class="section__content content--yellow">
+                                    <p class="content__text">Zobacz szczegóły</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
+                    </div>
+                    <div class="container__photo">
+                       <div class="container__cont">
+                        <img class="container__img" src="app/img/blow-bubbles.jpg" alt="">
+                        </div>
+                    <div class="container__box">
+                        <img class="container__sign" src="app/img/pinezka--yellow.png" alt="sekcja fundacji nasze dzieci" alt="sekcja fundacji nasze dzieci">
+                        <h1 class="container__headline">Animacje dla dzieci2</h1>
+                        <p class="container__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quam nam rem tenetur eaque, vero assumenda et officiis iure.</p>
+                        <div class="button">
+                            <a href="" class="section__link button--yellow">
+                                <svg class="section__svg svg--yellow" role="img">
+                                        <use xlink:href="app/svg/map.svg#czytaj_wiecej"/>
+                                        </svg>
+                                <div class="section__content content--yellow">
+                                    <p class="content__text">Zobacz szczegóły</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container__photo">
+                        <div class="container__cont">            
+                        <img class="container__img" src="app/img/children.jpg" alt="">
+                        </div>
+                    <div class="container__box">
+                        <img class="container__sign" src="app/img/pinezka--yellow.png" alt="sekcja fundacji nasze dzieci" alt="sekcja fundacji nasze dzieci">
+                        <h1 class="container__headline">Animacje dla dzieci3</h1>
+                        <p class="container__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quam nam rem tenetur eaque, vero assumenda et officiis iure.</p>
+                        <div class="button">
+                            <a href="" class="section__link button--yellow">
+                                <svg class="section__svg svg--yellow" role="img">
+                                        <use xlink:href="app/svg/map.svg#czytaj_wiecej"/>
+                                        </svg>
+                                <div class="section__content content--yellow">
+                                    <p class="content__text">Zobacz szczegóły</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container__photo">
+                        <div class="container__cont">            
+                        <img class="container__img" src="app/img/children.jpg" alt="">
+                        </div>
+                    <div class="container__box">
+                        <img class="container__sign" src="app/img/pinezka--yellow.png" alt="sekcja fundacji nasze dzieci" alt="sekcja fundacji nasze dzieci">
+                        <h1 class="container__headline">Animacje dla dzieci4</h1>
+                        <p class="container__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quam nam rem tenetur eaque, vero assumenda et officiis iure.</p>
+                        <div class="button">
+                            <a href="" class="section__link button--yellow">
+                                <svg class="section__svg svg--yellow" role="img">
+                                        <use xlink:href="app/svg/map.svg#czytaj_wiecej"/>
+                                        </svg>
+                                <div class="section__content content--yellow">
+                                    <p class="content__text">Zobacz szczegóły</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                    
+                   
+                <div class="container__prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
                 </div>
-                <div class="slider__container slider__container--second">
-                    <img class="slider__img" src="app/img/hands.jpg" alt="">
-                    <div class="content" style="background-color: rgba(0, 166, 237,0.75);">
-                    <h1 class="content__headline">Warsztaty teatralne 2018</h1>
-                    <p class="content__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, delectus hic dolores perspiciatis maxime molestiae quos sint.</p>
-                </div>
-                </div>
-                <div class="slider__container slider__container--second">
-                    <img class="slider__img" src="app/img/wycieczka.png" alt="">
-                    <div class="content" style="background-color:  rgba(127, 184, 0, 0.75);">
-                    <h1 class="content__headline">Warsztaty teatralne 2018</h1>
-                    <p class="content__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, delectus hic dolores perspiciatis maxime molestiae quos sint.</p>
-                </div>
-                </div>
-                <div class="slider__container slider__container--second">
-                    <img class="slider__img" src="app/img/santa.png" alt="">
-                    <div class="content" style="background-color:  rgba(13, 44, 84,0.75);">
-                    <h1 class="content__headline">Warsztaty teatralne 2018</h1>
-                    <p class="content__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, delectus hic dolores perspiciatis maxime molestiae quos sint.</p>
-                </div>
-                </div>
-                <div class="slider__container slider__container--third">
-                    <img class="slider__img" src="app/img/children.jpg" alt="">
-                    <div class="content" style="background-color: rgba(246, 81, 29,0.7);">
-                    <h1 class="content__headline">Warsztaty teatralne 2018</h1>
-                    <p class="content__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, delectus hic dolores perspiciatis maxime molestiae quos sint.</p>
+                <div class="container__next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
                 </div>
                 </div>
             </div>
-            <div class="trapezoid">
-                <div class="trapezoid__circle trapezoid__circle--yellow"></div>
-                <div class="trapezoid__circle trapezoid__circle--blue"></div>
-                <div class="trapezoid__circle trapezoid__circle--green"></div>
-                <div class="trapezoid__circle trapezoid__circle--navy"></div>
-                <div class="trapezoid__circle trapezoid__circle--orange"></div>
-            </div>
-            <div class="slider__button prev">
-                <i class="fa fa-chevron-left" aria-hidden="true"></i></div>
-            <div class="slider__button next">
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </div>
-        </div>
-        </div>
-        <div class="container">
-        <section class="section section--dashed section--flex">
-           
             
-            <div class="slidercontent">
-                <h1 class="section__headline section__headline--left">warsztaty teatralne 2018</h1>
-                <p class="section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maiores quidem nihil.</p>
-            </div>
-            <div class="slidercontent">
-                <h1 class="section__headline section__headline--left">warsztaty teatralne 2018</h1>
-                <p class="section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maiores quidem nihil.</p>
-            </div>
-            <div class="slidercontent">
-                <h1 class="section__headline section__headline--left">warsztaty teatralne 2018</h1>
-                <p class="section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maiores quidem nihil.</p>
-            </div>
-            <div class="slidercontent">
-                <h1 class="section__headline section__headline--left">warsztaty teatralne 2018</h1>
-                <p class="section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maiores quidem nihil.</p>
-            </div>
-            <div class="slidercontent">
-                <h1 class="section__headline section__headline--left">warsztaty teatralne 2018</h1>
-                <p class="section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maiores quidem nihil.</p>
-            </div>
-            <div class="button">
-               <a href="" class="section__link button--orange">
-                <svg class="section__svg svg--orange" title="Eye" role="img">
-                <use xlink:href="app/svg/map.svg#czytaj_wiecej"/>
-                </svg>  
-                <div class="section__content content--orange">
-                    <p class="content__text">Czytaj więcej</p>
-                </div>
-                </a>
-            </div>
+        <ul class="buttons">
+            <li class="buttons__item buttons__item--slider buttons__item--border"><a>
+                   <svg class="buttons__svg svg--opacity" title="Eye" role="img">
+                <use xlink:href="app/svg/map.svg#sun"/>
+                </svg></a></li>
+            <li class="buttons__item buttons__item--slider buttons__item--border"><a>
+                <svg class="buttons__svg svg--opacity" title="Eye" role="img">
+                <use xlink:href="app/svg/map.svg#snow"/>
+                </svg>
+            </a></li>
+            <li class="buttons__item buttons__item--slider buttons__item--border"><a>
+                <svg class="buttons__svg svg--opacity" title="Eye" role="img">
+                <use xlink:href="app/svg/map.svg#ball"/>
+                </svg>
+            </a></li>
+            <li class="buttons__item buttons__item--slider buttons__item--border"><a>
+                <svg class="buttons__svg svg--opacity" title="Eye" role="img">
+                <use xlink:href="app/svg/map.svg#heart"/>
+                </svg>
+            </a></li>
+        </ul>
         </section>
-        </div>
-        <div class="container">   
-            <h1 class="heading heading--margin">Wsparcie</h1>
-            <section class="section section--relative">
-                <h1 class="section__headline section__headline--center">jesteśmy organizacją pożytku publicznego</h1>
-                <div class="content">
-                    <div class="content__photo">
-                        <img class="content__img" src="app/img/opp4.png" alt="">
+            
+        <section class="section section--orange">
+                <div class="container">
+                    <div class="container__text">
+                        <h2 class="section__headline">Ty też możesz pomóc!</h2>
+                        <p class="container__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non sequi neque, quaerat sapiente placeat et maxime similique iusto voluptatibus laboriosam atque rerum dolores id dolorem laudantium, a totam nihil perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <div class="clear"></div>
+                        <div class="button">
+                                        <a href="" class="section__link button--orange">
+                                            <svg class="section__svg svg--orange" title="Eye" role="img">
+                                    <use xlink:href="app/svg/map.svg#czytaj_wiecej"/></svg>
+                                            <div class="section__content content--orange">
+                                                <p class="content__text">Czytaj więcej</p>
+                                            </div>
+                                        </a>
+                                    </div>
                     </div>
-                    <p class="content__paragraph">Oznacza to, że nasza działalność funkcjonuję wyłącznie dzięki <span class="content__paragraph--bold">Państwa pomocy!</span> Aby nas wesprzeć, wystarczy przekazać 1% swojego podatku lub wysłać dotacje.</p>
-                </div>
-                <div class="button button--two">
-                    <a href="" class="section__link section__link--big button--orange">
-                        <svg class="section__svg svg--orange" title="Eye" role="img">
-                                <use xlink:href="app/svg/map.svg#icon_hand_zl"/>
+                    <div class="container__photo">
+                       <img src="app/img/opp4.png" alt="" class="container__img">
+                    </div>
+                    <div class="container__icons">
+                            <div class="box box--margin">
+                                <svg class="box__item " title="" role="img">
+                                    <use xlink:href="app/svg/map.svg#icon_hand_%"/>
                                 </svg>
-                        <div class="section__content content--orange">
-                            <p class="content__text">przekaż dotacje</p>
-                        </div>
-                    </a>
-                    <a href="" class="section__link section__link--big button--orange button--padding">
-                        <svg class="section__svg svg--orange" title="Eye" role="img">
-                                <use xlink:href="app/svg/map.svg#icon_hand_%"/>
+                                <p class="box__sign">przekaż 1%</p>
+                            </div>
+                            <div class="box">
+                                <svg class="box__item" title="" role="img">
+                                    <use xlink:href="app/svg/map.svg#icon_hand_zl"/>
                                 </svg>
-                        <div class="section__content content--orange">
-                            <p class="content__text">przekaż 1%</p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-        </div>
-        <div class="container">
-            <h1 class="heading">Partnerzy</h1>
-            <section class="section section--last">
-                <!--<div class="slider--carousel__container">
-                    <img src="app/img/blow-bubbles.jpg" alt="" class="carousel__img carousel__img1">
-                    <img src="app/img/children.jpg" alt="" class="carousel__img carousel__img2">
-                    <img src="app/img/hands.jpg" alt="" class="carousel__img carousel__img3">
-                    <img src="app/img/logo_desktop.jpg" alt="" class="carousel__img carousel__img4">
-                    <img src="app/img/water-fight.jpg" alt="" class="carousel__img carousel__img5">
-                    <div class="carousel__prev"></div>
-                    <div class="carousel__next"></div>
-                </div>-->
-                <div class="button button--two">
-                    <a href="" class="section__link section__link--big button--orange">
-                        <svg class="section__svg svg--orange" title="Eye" role="img">
-                                <use xlink:href="app/svg/map.svg#hands"/>
+                                 <p class="box__sign">przekaż dotację</p>
+                            </div>
+                            <div class="box">
+                                <svg class="box__item" title="" role="img">
+                                    <use xlink:href="app/svg/map.svg#hands"/>
                                 </svg>
-                        <div class="section__content content--orange">
-                            <p class="content__text">zostań partnerem</p>
+                                <p class="box__sign">zostań partnerem</p>
+                            </div>
                         </div>
-                    </a>
+                    <img class="container__sign" src="app/img/pinezka--yellow.png" alt="sekcja fundacji nasze dzieci" alt="sekcja fundacji nasze dzieci">
                 </div>
             </section>
-        </div>
+            <section class="section section--blue">
         <div class="container">
-            <h1 class="heading">Nasze działania</h1>
-            <section class="section--photo">
+                <h2 class="section__headline">Poznaj nas lepiej!</h2>
+                <p class="container__text">
+                <img class="container__img" src="app/img/imprezy%20szkolne.png" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non sequi neque, quaerat sapiente placeat et maxime similique iusto voluptatibus laboriosam atque rerum dolores id dolorem laudantium, a totam nihil perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non sequi neque, quaerat sapiente placeat et maxime similique iusto voluptatibus laboriosam atque rerum dolores id dolorem laudantium, a totam nihil perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta magni libero quis unde vel a error, magnam veritatis accusantium, incidunt nobis animi sint totam dignissimos porro omnis! Eaque, cupiditate, mollitia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </p>
                 
-                <div class="content">
-                   <!-- <div class="content__img">
-                        <img class="img--small" src="app/img/sport-zima.png" alt="">
-                    </div>-->
-                    <p class="section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum aliquam nihil reiciendis omnis molestiae obcaecati architecto molestias? Suscipit, id ex provident a veniam eos, amet enim maiores fuga beatae dolorum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur magnam beatae.</p>
-                    <div class="button">
-                       <a href="" class="section__link button--navy">
-                        <svg class="section__svg svg--navy" title="Eye" role="img">
-                        <use xlink:href="app/svg/map.svg#czytaj_wiecej"/>
-                        </svg>  
-                        <div class="section__content content--navy">
+            <img class="container__sign" src="app/img/pinezka--navy.png" alt="sekcja fundacji nasze dzieci">
+            <div class="clear"></div>
+            <div class="button button--padding">
+                                        <a href="" class="section__link button--blue">
+                                            <svg class="section__svg svg--blue" title="Eye" role="img">
+                                    <use xlink:href="app/svg/map.svg#czytaj_wiecej"/></svg>
+                                            <div class="section__content content--blue">
+                                                <p class="content__text">Czytaj więcej</p>
+                                            </div>
+                                        </a>
+                                    </div>
+           <div class="gallery">
+               <figure class="gallery__photo">
+                   <img src="app/img/children.jpg" alt="" class="gallery__img">
+                   <figcaption class="gallery__sign">
+                       <h2 class="gallery__headline">Anna Domagała</h2>
+                       <p class="gallery__position">prezes zarządu</p>
+                   </figcaption>
+               </figure>
+               <figure class="gallery__photo">
+                   <img src="app/img/children.jpg" alt="" class="gallery__img">
+                   <figcaption class="gallery__sign">
+                        <h2 class="gallery__headline">Anna Domagała</h2>
+                        <p class="gallery__position">prezes zarządu</p>
+                   </figcaption>
+                   
+               </figure>
+               <figure class="gallery__photo">
+                   <img src="app/img/children.jpg" alt="" class="gallery__img">
+                   <figcaption class="gallery__sign">
+                        <h2 class="gallery__headline">Anna Domagała</h2>
+                       <p class="gallery__position">prezes zarządu</p>
+                   </figcaption>
+               </figure>
+               <div class="line"></div>
+           </div>
+        </div>
+    </section> 
+    <section class="section section--green section--home section--padding">
+        <div class="container">
+            <h2 class="section__headline">Nad czym aktualnie pracujemy?</h2>
+            
+            <div class="container__text">
+                <img class="container__img" src="app/img/imprezy%20szkolne.png" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non sequi neque, quaerat sapiente placeat et maxime similique iusto voluptatibus laboriosam atque rerum dolores id dolorem laudantium, a totam nihil perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non sequi neque, quaerat sapiente placeat et maxime similique iusto voluptatibus laboriosam atque rerum dolores id dolorem laudantium, a totam nihil perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           
+                <span class="button button--span">
+                    <a href="" class="section__link button--green">
+                        <svg class="section__svg svg--green" role="img">
+                            <use xlink:href="app/svg/map.svg#czytaj_wiecej"/></svg>
+                        <span class="section__content content--green">
                             <p class="content__text">Czytaj więcej</p>
-                        </div>
-                        </a>
-                        </div>
-                    </div>
-            </section>
-        </div>
-    <div class="container">
-        <div class="flex">        
-                <section class="section--photo section--top">
-                    <a href="" class="section__link">
-                        <h2 class="section__headline--color section__headline--green">kolonie</h2>
-                        <div class="section__container">
-                            <img class="section__img" src="app/img/wycieczka.png" alt="">
-                            <img class="section__img section__img--desktop" src="app/img/wycieczka-desktop.png" alt="">
-                        </div>
-                        <button class="flex__button">zobacz szczegóły</button>
+                        </span>
                     </a>
-                </section>
-            <section class="section--photo">
-                <a href="" class="section__link">
-                    <h2 class="section__headline--color section__headline--blue">zimowiska</h2>
-                    <div class="section__container">
-                        <img class="section__img" src="app/img/zima.png" alt="">
-                        <img class="section__img section__img--desktop" src="app/img/zima-desktop.png" alt="">
+                </span>
+            </div>
+            <img class="container__sign" src="app/img/pinezka--blue.png" alt="sekcja fundacji nasze dzieci">
+            <div class="clear"></div>
+            
+            <div class="section__background">
+                   <h2 class="section__headline--box">ostatnie aktualności</h2>
+               </div>
+            <div class="news">
+                <div class="news__photo">
+                    <img class="news__img" src="app/img/imprezy%20szkolne.png" alt="" class="news__img">
+                    <div class="news__content">
+                        <h3 class="news__headline">obóz fotograficzny w szczawnicy 2018</h3>
+                        <div class="news__paragraph">                        <div class="news__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.  </div>
+                        </div>
+                        <a href="" class="news__link">
+                            <svg class="section__svg svg--green" role="img">
+                            <use xlink:href="app/svg/map.svg#czytaj_wiecej"/></svg>
+                        </a>
                     </div>
-                    <button class="flex__button">zobacz szczegóły</button>
-                </a>
-            </section>
-            <section class="section--photo">
-                <a href="" class="section__link">
-                    <h2 class="section__headline--color section__headline--orange">imprezy szkolne</h2>
-                    <div class="section__container">
-                        <img class="section__img" src="app/img/imprezy%20szkolne.png" alt="">
-                        <img class="section__img section__img--desktop" src="app/img/zabawa-desktop.png" alt="">
+                </div>
+                <div class="news__photo">
+                    <img class="news__img" src="app/img/zima.png" alt="" class="news__img">
+                    <div class="news__content">
+                        <h3 class="news__headline">obóz fotograficzny w szczawnicy 2018</h3>
+                        <div class="news__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.  </div>
+                        <a href=""  class="news__link">
+                            <svg class="section__svg svg--green" role="img">
+                            <use xlink:href="app/svg/map.svg#czytaj_wiecej"/></svg>
+                        </a>
                     </div>
-                    <button class="flex__button">zobacz szczegóły</button>
-                </a>
-            </section>
-            <section class="section--photo">
-                <a href="" class="section__link">
-                    <h2 class="section__headline--color section__headline--yellow">akcje charytatywne</h2>
-                    <div class="section__container">
-                        <img class="section__img" src="app/img/santa.png" alt="">
-                        <img class="section__img section__img--desktop" src="app/img/santa-desktop.png" alt="">
+                </div>
+                <div class="news__photo">
+                    <img class="news__img" src="app/img/zima-desktop.png" alt="" class="news__img">
+                    <div class="news__content">
+                        <h3 class="news__headline">obóz fotograficzny w szczawnicy 2018 </h3>
+                        <div class="news__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.  </div>
+                        <a href=""  class="news__link">
+                            <svg class="section__svg svg--green" role="img">
+                            <use xlink:href="app/svg/map.svg#czytaj_wiecej"/></svg>
+                        </a>
                     </div>
-                    <button class="flex__button">zobacz szczegóły</button>
+                </div>
+            </div>
+            <div class="button button--center">
+                <a href="" class="section__link button--green">
+                    <svg class="section__svg svg--green" title="Eye" role="img">
+                                                    <use xlink:href="app/svg/map.svg#czytaj_wiecej"/></svg>
+                    <div class="section__content content--green">
+                        <p class="content__text">wszystkie aktualności</p>
+                    </div>
                 </a>
-            </section>
+            </div>
         </div>
-    </div>
+    </section>
     </main>
     <footer class="footer">
         <!--<ul class="footer__menu">
@@ -402,6 +472,6 @@
        
     <script src="app/js/jquery-3.3.1.min.js"></script>
     <script src="app/js/index.js"></script>
-    
+    <script src="slick-1.8.0/slick/slick.min.js"></script>
 </body>
 </html>
